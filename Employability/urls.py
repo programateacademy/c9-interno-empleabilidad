@@ -22,10 +22,10 @@ urlpatterns = [
 ]
 
 urlpatterns += [
-    path('Dashboard/', include('Dashboard.urls')),
+    path('dashboard/', include('Dashboard.urls')),
 ]
 urlpatterns += [
-    path('Home/', include('Home.urls')),
+    path('home/', include('Home.urls')),
 ]
    
    
