@@ -1,5 +1,8 @@
 from django.shortcuts import render
 
-def home_view(request):
     # Lógica de la vista aquí
-    return render(request, 'home.html')
+def index(request):
+    return render(request, 'index.html')
+
+def home(request):
+    return render (request, 'Home/home.html')
