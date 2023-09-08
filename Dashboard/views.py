@@ -1,3 +1,8 @@
 from django.shortcuts import render
 
-# Create your views here.
+    # Lógica de la vista aquí
+def index(request):
+    return render(request, 'index.html')
+
+def dashboard(request):
+    return render (request, 'Dashboard/dashboard.html')
