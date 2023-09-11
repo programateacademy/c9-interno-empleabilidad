@@ -5,9 +5,10 @@ body {
   }
   
   .container {
-    max-width: 60%;
+    max-width: 30%;
     margin: 0 auto;
     background-color: #FFC107;
+    border-radius: 30px;
     
   }
   
@@ -18,19 +19,22 @@ body {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
   
-  .panel-heading {
+  .panel {
     background-color: #FFC107;
     color: rgb(0, 0, 0);
     padding: 15px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
-
-  .panel-body {
-    padding: 15px;
     font-size: larger;
+    text-align: center;
   }
   
+  .panel-title{
+    display: inline-block;
+  }
+
+  .container-img{
+    text-align: center;
+  }
+
   /* Estilos del formulario */
   .form-control {
     display: block;
@@ -39,7 +43,7 @@ body {
     border: none;
     border-bottom: 1px solid #E0E0E0;
     outline: none;
-    border-radius: 1%;
+    border-radius: 20px;
   }
   
   .form-control:focus {
@@ -57,6 +61,7 @@ body {
     border: none;
     border-radius: 20px;
     font-size: large;
+    margin: 0 auto;
   }
   
   .btn:hover {
@@ -80,6 +85,11 @@ body {
   
    .col-md-offset-3 {
      margin-left: 0;
+   }
+
+   .container {
+    max-width: 60%;
+    margin: 0 auto;
    }
   
   }
