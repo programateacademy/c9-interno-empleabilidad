@@ -6,3 +6,6 @@ def index(request):
 
 def dashboard(request):
     return render (request, 'Dashboard/dashboard.html')
+
+def dashboardStudent(request):
+    return render (request, 'Dashboard/dashboardStudent.html')
