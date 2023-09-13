@@ -1,1 +1,24 @@
-<h1>Auth Dashboard</h1>
+
+{% load static %}
+<link rel="stylesheet" href="{% static '../static/Css/style.css' %}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<div class="container-img">
+  <img src="../static/img/programate-negro-alta- 5.png"/>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="panel panel-default">
+          <h3 class="panel-title">Iniciar sesión</h3>
+          <form method="post" action="#">
+            <p><label for="id_usuario"></label> <input type="text" name="usuario" maxlength="50" required id="id_usuario" placeholder="Correo/Cedula" class="form-control"></p>
+            <p><label for="id_contraseña"></label> <input type="password" name="contraseña" required id="id_contraseña" placeholder="Contraseña" class="form-control"></p>
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
+
