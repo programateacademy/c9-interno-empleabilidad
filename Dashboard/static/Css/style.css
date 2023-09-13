@@ -1,20 +1,24 @@
 /* Estilos generales */
 body {
-    background-color: #F9F9F9;
+    background-image: url(../img/img.png);
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-attachment: fixed;
+    background-size: cover;
     font-family: Arial, sans-serif;
   }
   
   .container {
     max-width: 30%;
     margin: 0 auto;
-    background-color: #FFC107;
     border-radius: 30px;
-    
   }
+
+
   
   /* Estilos del panel */
   .panel {
-    border: 1px solid #E0E0E0;
+    border: 1px solid #FFC107;
     border-radius: 5%;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
@@ -43,7 +47,9 @@ body {
     border: none;
     border-bottom: 1px solid #E0E0E0;
     outline: none;
-    border-radius: 20px;
+    border-radius: 10px;
+    padding-left: 1rem;
+    font: 1em sans-serif;
   }
   
   .form-control:focus {
