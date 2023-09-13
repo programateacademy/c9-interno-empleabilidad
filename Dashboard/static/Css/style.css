@@ -1,6 +1,10 @@
 /* Estilos generales */
 body {
-    background-image: url(../img/image\ 16.png);
+    background-image: url(../img/img.png);
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-attachment: fixed;
+    background-size: cover;
     font-family: Arial, sans-serif;
   }
   
