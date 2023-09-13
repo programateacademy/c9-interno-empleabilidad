@@ -1,43 +1,98 @@
-/* Estilos para la barra de navegación */
+/* Estilos generales */
+body {
+    background-image: url(../img/image\ 16.png);
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 30%;
+    margin: 0 auto;
+    border-radius: 30px;
+  }
 
-.navbar {
-    background-color: #FAD209;
-    padding: 10px 0;
-    color: white;
+
+  
+  /* Estilos del panel */
+  .panel {
+    border: 1px solid #FFC107;
+    border-radius: 5%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
   
-  .navbar-brand img {
-    margin-right: 10px;
+  .panel {
+    background-color: #FFC107;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    font-size: larger;
+    text-align: center;
   }
   
+  .panel-title{
+    display: inline-block;
+  }
+
+  .container-img{
+    text-align: center;
+  }
+
+  /* Estilos del formulario */
   .form-control {
-    background-color: #eee;
+    display: block;
+    width: 100%;
+    height: 40px;
     border: none;
+    border-bottom: 1px solid #E0E0E0;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 1rem;
+    font: 1em sans-serif;
   }
   
   .form-control:focus {
-    border-color: #ccc;
+    border-bottom-color: #ffffff;
   }
+
+
   
-  .navbar-toggler {
+  .btn {
+    display: block;
+    width: 50%;
+    height: 40px;
+    background-color: #000000;
+    color: white;
     border: none;
-    background-color: transparent;
+    border-radius: 20px;
+    font-size: large;
+    margin: 0 auto;
   }
   
-  .navbar-toggler-icon {
-    background-color: pink;
+  .btn:hover {
+    background-color: #1CA631;
   }
   
-  .offcanvas {
-    background-color: #2E2E2E;
-    color: white;
-  }
+  /* Media queries */
+  @media (max-width: 768px) {
+    
+   /* Estilos para pantallas pequeñas */
+    
+   .row {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
   
-  .offcanvas a.nav-link {
-    color: white;
-  }
+   .col-md-6 {
+     width: 100%;
+   }
   
-  .offcanvas a.nav-link:hover {
-    color: #ccc;
+   .col-md-offset-3 {
+     margin-left: 0;
+   }
+
+   .container {
+    max-width: 60%;
+    margin: 0 auto;
+   }
+  
   }
   

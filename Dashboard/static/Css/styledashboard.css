@@ -1,0 +1,42 @@
+/* Estilos para la barra de navegación */
+
+.navbar {
+    background-color: #FAD209;
+    padding: 10px 0;
+    color: white;
+  }
+  
+  .navbar-brand img {
+    margin-right: 10px;
+  }
+  
+  .form-control {
+    background-color: #eee;
+    border: none;
+  }
+  
+  .form-control:focus {
+    border-color: #ccc;
+  }
+  
+  .navbar-toggler {
+    border: none;
+    background-color: transparent;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: pink;
+  }
+  
+  .offcanvas {
+    background-color: #2E2E2E;
+    color: white;
+  }
+  
+  .offcanvas a.nav-link {
+    color: white;
+  }
+  
+  .offcanvas a.nav-link:hover {
+    color: #ccc;
+  }
