@@ -1,52 +1,11 @@
 /* Estilos para la barra de navegación */
 
 .navbar {
-    background-color: #FAD209;
-    padding: 10px 0;
-    color: white;
-  }
-  
-  /* En tu archivo CSS */
-.logo {
-  width: 50px; /* Establece el ancho deseado */
-  height: 50px; /* Establece la altura deseada */
-}
-.logo2 {
-  width: 50px; /* Establece el ancho deseado */
-  height: 50px; /* Establece la altura deseada */
+  background-color: black;
+  padding: 10px 0;
+
 }
 
-  .navbar-brand img {
-    margin-right: 10px;
-  }
-  
-  .form-control {
-    background-color: #eee;
-    border: none;
-  }
-  
-  .form-control:focus {
-    border-color: #ccc;
-  }
-  
-  .navbar-toggler {
-    border: none;
-    background-color: transparent;
-  }
-  
-  .navbar-toggler-icon {
-    background-color: pink;
-  }
-  
-  .offcanvas {
-    background-color: #2E2E2E;
-    color: white;
-  }
-  
-  .offcanvas a.nav-link {
-    color: white;
-  }
-  
-  .offcanvas a.nav-link:hover {
-    color: #ccc;
-  }
+.navbar-tittle{
+  color: #000;
+}
