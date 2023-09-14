@@ -11,7 +11,8 @@ body {
   .container {
     max-width: 30%;
     margin: 0 auto;
-    border-radius: 30px;
+    border-radius: 30px;    
+    height: 27rem;
   }
 
 
@@ -29,37 +30,68 @@ body {
     padding: 15px;
     font-size: larger;
     text-align: center;
+    height: 23rem;
   }
-  
+
   .panel-title{
-    display: inline-block;
+    display:inline-block;
+    font-size: x-large;
+
   }
+
+.line * {
+  box-sizing: border-box;
+}
+.line {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 355px;
+  height: 0px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+
 
   .container-img{
     text-align: center;
   }
 
+  .container-img2 {
+    text-align:center;
+  }
+
   /* Estilos del formulario */
   .form-control {
-    display: block;
+    display: flex;
     width: 100%;
-    height: 40px;
+    height: 50px;
     border: none;
     border-bottom: 1px solid #E0E0E0;
     outline: none;
     border-radius: 10px;
     padding-left: 1rem;
     font: 1em sans-serif;
+    margin-bottom: 30px;
   }
   
   .form-control:focus {
     border-bottom-color: #ffffff;
   }
 
+  .form {
+    height: 10rem;
+  }
+
+  .row {
+    position: relative;
+    margin-top: 3rem;
+  }
 
   
   .btn {
-    display: block;
+    display: flex;
     width: 50%;
     height: 40px;
     background-color: #000000;
@@ -68,12 +100,19 @@ body {
     border-radius: 20px;
     font-size: large;
     margin: 0 auto;
+    justify-content: center;
+    align-items: center;
   }
   
   .btn:hover {
-    background-color: #1CA631;
+    transform: translateY(3px);
+    box-shadow: none;
   }
   
+  .btn:active {
+    opacity: 0.7;
+  }
+
   /* Media queries */
   @media (max-width: 768px) {
     
@@ -87,6 +126,7 @@ body {
   
    .col-md-6 {
      width: 100%;
+
    }
   
    .col-md-offset-3 {
@@ -97,6 +137,37 @@ body {
     max-width: 60%;
     margin: 0 auto;
    }
+
+   .line {
+    width: 100%;
+   }
   
   }
+
+  @media(min-width: 768px){
+    .line {
+      width: 100%;
+    }
+    
+  }
   
+
+  /*`xs` returns only a ruleset and no media query
+// ... { ... }
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px)*/
+/* @media (max-width: 575.98px) { 
+
+ } */
+
+/* `md` applies to small devices (landscape phones, less than 768px)*/
+/* @media (max-width: 767.98px) {  } */
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+/* @media (max-width: 991.98px) {  } */
+
+/* `xl` applies to large devices (desktops, less than 1200px)*/
+/* @media (max-width: 1199.98px) {  } */
+
+/*`xxl` applies to x-large devices (large desktops, less than 1400px)*/
+/* @media (max-width: 1399.98px) {  } */
