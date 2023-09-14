@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
     # Lógica de la vista aquí
-def index(request):
+def loginstudent(request):
     return render(request, 'indexHome.html')
 
 def home(request):
