@@ -1,9 +1,9 @@
 /* Estilos para la barra de navegación */
 
 .navbar {
-  background-color: black;
+  background-color: greenyellow;
   padding: 10px 0;
-
+  color: white;
 }
 
 .navbar-tittle{

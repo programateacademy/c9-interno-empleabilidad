@@ -18,11 +18,11 @@ def cohortes(request):  #para agregar cohortes
     return render(request, 'Dashboard/dashboardCohorte.html')
 
 
-def addstudent(requeste): 
-    return render(requeste, 'Dashboard/dashboardAddStudent.html')
+def addstudent(request): 
+    return render(request, 'Dashboard/dashboardAddStudent.html')
 
-def students(requeste): 
-    return render(requeste, 'Dashboard/dashboardStudent.html')
+def students(request): 
+    return render(request, 'Dashboard/dashboardStudent.html')
 
 
 
