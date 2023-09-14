@@ -6,6 +6,16 @@
     color: white;
   }
   
+  /* En tu archivo CSS */
+.logo {
+  width: 50px; /* Establece el ancho deseado */
+  height: 50px; /* Establece la altura deseada */
+}
+.logo2 {
+  width: 50px; /* Establece el ancho deseado */
+  height: 50px; /* Establece la altura deseada */
+}
+
   .navbar-brand img {
     margin-right: 10px;
   }
