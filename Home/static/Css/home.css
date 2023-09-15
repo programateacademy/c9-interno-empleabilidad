@@ -23,7 +23,7 @@ table {
     height: 25rem;
     margin-bottom: 0;
     margin-top: 0;
-    background-color: rgba(111, 105, 98, 0.822);
+    background-color: rgba(251, 249, 248, 0.822);
     background-repeat: no-repeat;
 }
 
@@ -34,10 +34,12 @@ table {
 }
 
 #aver{
-    background-color: rgb(253, 187, 5);
+    
     display: flex;
     justify-content: center;
     text-align: center;
+    color: rgb(1, 1, 0);
+    
 }
 
 #pro{
@@ -45,4 +47,16 @@ table {
     justify-content:center;
     text-align: center;
     margin-top: 1.5rem;
+    color: rgb(25, 103, 171);
+    background-color: rgb(247, 190, 3);
+}
+
+
+#footer, #aver{
+    line-height: 2px;
+    height: 110px;
+}
+
+#contact{
+    margin-top: 0.8rem;
 }
