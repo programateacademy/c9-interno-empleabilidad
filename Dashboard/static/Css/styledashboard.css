@@ -6,6 +6,11 @@
   border-radius: 20px;
 }
 
+.my-section {
+  min-height: calc(100vh - 100px);
+  padding-top: 64px;
+}
+
 table tr {
   text-align: center;
   vertical-align: middle;
