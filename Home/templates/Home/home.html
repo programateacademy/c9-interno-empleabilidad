@@ -18,43 +18,33 @@
         <img class="imagen" src="{% static 'img/logo-color-alta-1.png' %}" alt="Descripción de la imagen"/>
         <h2 class="imagen">Empleabilidad</h2>
     </nav>
-        <table class="table"  class="text-center">
+        <table class="table">
             <thead>
-                <tr class="table-warning">
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Cedula</th>
-                    <th scope="col">Empleabilidad</th>
-                    <th scope="col">Empresas</th>
-                </tr>
-                <tr class="table-light" class"text-center">
-                    <th scope="row">jasbleidy</th>
-                    <td>12456789</td>
-                    <td>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-sucess rounded-pill dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="max-width: 100px;">
-                                Seleccionar
-                            </button>
-                            <div class="dropdown-menu">
-                                <button class="dropdown-item" type="button">Contratado</button>
-                                <button class="dropdown-item" type="button">No contratado</button>
-                                <button class="dropdown-item" type="button">En proceso de empleabilidad</button>
-                            </div>
-                        </div>
-                    </td>    
+                <div>
+                    <tr class="table-warning ">
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Cedula</th>
+                        <th scope="col">Empleabilidad</th>
+                        <th scope="col">Empresas</th>
+                    </tr>
+                    <tr class="table-light ">
+                        <th scope="row">jasbleidy</th>
+                        <td>12456789</td>
+                    <td>Contratado</td>    
                     <td>amazon</td>
                 </tr>
             </thead>
         </table>
         <div class="fondo">
         </div>
-        <footer class="bg-warning text-dark">
+        <footer id="footer" class="bg-warning text-dark">
             <div class="container" id="aver">
 
                 <div class="row">
                     <div class="col-md-4" >
                         <img src="{% static 'img/Logo-color-alta-1.png' %}" alt="EducMas Logo" class="img-fluid">
                     </div>
-                    <div class="col-md-4">
+                    <div id="contact" class="col-md-4">
                         <h5>Si tienes alguna pregunta, contáctanos:</h5>
                         <p>Teléfono: +123456789</p>
                         <p>Correo: info@example.com</p>
