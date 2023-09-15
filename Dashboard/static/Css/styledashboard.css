@@ -1,15 +1,23 @@
-/* Estilos para la barra de navegación */
-
-.navbar {
-  background-color: rgba(242, 188, 27, 1);
-  padding: 10px 0;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+#inlineFormCustomSelect{
+  color: #030303;
+  background-color: rgb(250, 250, 249);
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
 }
 
-.navbar-tittle{
-  color: #000;
-  margin-left: auto;
+.my-section {
+  min-height: calc(100vh - 100px);
+  padding-top: 55px;
+}
+
+table tr {
+  text-align: center;
+  vertical-align: middle;
+  height: 60px; 
+}
+
+th, td {
+  width: 33.33%; /* columnas iguales */
+  text-align: center;
 }
