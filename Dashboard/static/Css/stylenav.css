@@ -1,9 +1,14 @@
 .navbar {
-    background-color: rgba(242, 188, 27, 1);
-    color: white;
-    display: flex;
-  }
-  
-  .title{
-    color: #000;
-  }
+  background-color: #F2BC1B;
+  padding: 10px 0;
+  color: white;
+}
+
+.navbar-tittle{
+  color: #000;
+}
+
+.logo {
+  width: 100px; 
+  height: 35px; 
+}
