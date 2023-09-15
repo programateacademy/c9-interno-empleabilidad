@@ -1,104 +1,48 @@
-body {
-    background-image: url(../img/img.png);
+.imagen, .imagen2 {
+    display: inline;
+    width: 20%;
+    vertical-align: bottom;
+    margin-right: 180px;
+}
+
+h2.imagen:last-child {
+    margin-right: 0;
+}
+
+h2.imagen {
+    vertical-align: bottom;
+    line-height: 1.5em;
+    font-size:2.5rem
+}
+
+table {
+    margin-bottom: 0px; /* Puedes ajustar el valor (en píxeles u otra unidad) según tu preferencia */
+}
+
+.fondo {
+    height: 25rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    background-color: rgba(111, 105, 98, 0.822);
     background-repeat: no-repeat;
-    background-position:center center;
-    background-attachment: fixed;
-    background-size: cover;
-    font-family: Arial, sans-serif;
-  }
-  
-  .container {
-    max-width: 30%;
-    margin: 0 auto;
-    border-radius: 30px;
-  }
+}
 
+.btn-group button{
+    color: #030303;
+    background-color: rgb(250, 250, 249);
+    width: 200px;
+}
 
-  
-  /* Estilos del panel */
-  .panel {
-    border: 1px solid #FFC107;
-    border-radius: 5%;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-  
-  .panel {
-    background-color: #FFC107;
-    color: rgb(0, 0, 0);
-    padding: 15px;
-    font-size: larger;
+#aver{
+    background-color: rgb(253, 187, 5);
+    display: flex;
+    justify-content: center;
     text-align: center;
-  }
-  
-  .panel-title{
-    display: inline-block;
-  }
+}
 
-  .container-img{
+#pro{
+    display: flex;
+    justify-content:center;
     text-align: center;
-  }
-
-
-
-  /* Estilos del formulario */
-  .form-control {
-    display: block;
-    width: 100%;
-    height: 40px;
-    border: none;
-    border-bottom: 1px solid #E0E0E0;
-    outline: none;
-    border-radius: 10px;
-    padding-left: 1rem;
-    font: 1em sans-serif;
-  }
-  
-  .form-control:focus {
-    border-bottom-color: #ffffff;
-  }
-
-  .btn {
-    display: block;
-    width: 50%;
-    height: 40px;
-    background-color: #000000;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    font-size: large;
-    margin: 0 auto;
-  }
-  
-  .btn:hover {
-    background-color: #1CA631;
-  }
-  
-
-
-  /* Media queries */
-  @media (max-width: 768px) {
-    
-
-    
-   /* Estilos para pantallas pequeñas */
-    
-   .row {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-   }
-  
-   .col-md-6 {
-     width: 100%;
-   }
-  
-   .col-md-offset-3 {
-     margin-left: 0;
-   }
-
-   .container {
-    max-width: 60%;
-    margin: 0 auto;
-   }
-  
-  }
+    margin-top: 1.5rem;
+}
