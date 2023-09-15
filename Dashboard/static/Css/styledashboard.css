@@ -1,11 +1,15 @@
 /* Estilos para la barra de navegación */
 
 .navbar {
-  background-color: greenyellow;
+  background-color: rgba(242, 188, 27, 1);
   padding: 10px 0;
   color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar-tittle{
   color: #000;
+  margin-left: auto;
 }
