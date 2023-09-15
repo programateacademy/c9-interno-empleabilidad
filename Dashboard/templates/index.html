@@ -12,8 +12,10 @@
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
         <div class="panel panel-default">
+          <div class="panel-heading">
             <h3 class="panel-title">Iniciar sesión Admin</h3>
               <div class="line"></div>
+          </div>
             <form method="post" action="#" class="form">
               {% csrf_token %}
               <p><label for="id_usuario"></label> <input type="text" name="usuario" maxlength="50" required id="id_usuario" placeholder="Correo/Cedula" class="form-control"></p>
