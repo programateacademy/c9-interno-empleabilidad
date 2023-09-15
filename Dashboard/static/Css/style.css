@@ -1,4 +1,10 @@
 /* Estilos generales */
+*{
+  padding: 0;
+  margin: 0;
+}
+
+
 body {
     background-image: url(../img/img.png);
     background-repeat: no-repeat;
