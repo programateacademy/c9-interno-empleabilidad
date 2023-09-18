@@ -1,0 +1,63 @@
+.card-body {
+    background-color: #cfcfcf; /* Color de fondo gris */
+}
+
+.switch-toggle {
+    position: relative;
+    margin: auto;
+    width: 300px;
+}
+
+.switch-toggle input {
+    position: absolute;
+    opacity: 0;
+}
+
+.switch-toggle label {
+    float: left;
+    width: 100px;
+    text-align: center;
+    color: #000000;
+    padding: 5px 0;
+    margin-right: -1px;
+    border: 1px solid #999;
+    cursor: pointer;
+}
+
+.switch-toggle input:checked + label {
+    color: #000000;
+}
+
+/* Cambiar colores de fondo según el estado */
+#rechazado:checked + label {
+    background-color: #f00; 
+}
+
+#enproceso:checked + label {
+    background-color: #FFDF8B;/
+}
+
+#contratado:checked + label {
+    background-color: #0f0; 
+}
+
+.switch-toggle a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all .3s ease-in-out;
+}
+
+#rechazado:checked ~ a {
+    right: 66%;
+}
+
+#enproceso:checked ~ a {
+    right: 33%;
+}
+
+#contratado:checked ~ a {
+    right: 0%;
+}
