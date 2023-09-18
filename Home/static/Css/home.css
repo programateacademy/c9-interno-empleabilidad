@@ -1,26 +1,26 @@
-.imagen, .imagen2 {
-    display: inline;
-    width: 20%;
-    vertical-align: bottom;
-    margin-right: 180px;
+
+body, html, nav{
+    margin: 0;
+    padding: 0;
 }
 
-h2.imagen:last-child {
-    margin-right: 0;
+
+  /* Para pantallas más grandes, usa el tamaño original de 300px */
+nav .imagen {
+    max-width: 220px;
+    width: 100%; /* Asegura que la imagen se ajuste al 100% del ancho del contenedor */
+    height: auto; /* Mantén la relación de aspecto original */
 }
 
-h2.imagen {
-    vertical-align: bottom;
-    line-height: 1.5em;
-    font-size:2.5rem
-}
+
+
 
 table {
     margin-bottom: 0px; /* Puedes ajustar el valor (en píxeles u otra unidad) según tu preferencia */
 }
 
 .fondo {
-    height: 25rem;
+    
     margin-bottom: 0;
     margin-top: 0;
     background-color: rgba(251, 249, 248, 0.822);
@@ -33,30 +33,79 @@ table {
     width: 200px;
 }
 
-#aver{
-    
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    color: rgb(1, 1, 0);
-    
-}
-
-#pro{
-    display: flex;
-    justify-content:center;
-    text-align: center;
-    margin-top: 1.5rem;
-    color: rgb(25, 103, 171);
-    background-color: rgb(247, 190, 3);
-}
 
 
-#footer, #aver{
-    line-height: 2px;
-    height: 110px;
-}
+
 
 #contact{
-    margin-top: 0.8rem;
+    margin-top: 0.1rem;
+    line-height: 2px;
+    padding: 0px;
+    margin: 0px;
+}
+
+@media (max-width: 576px) {
+    .no-border-row th,
+    .no-border-row td {
+        border: none; /* Elimina los bordes en pantallas menores a 576px */
+    }
+    .col-sm-12.full-height {
+        height: calc(100vh - 150px); /* Ajusta la altura según sea necesario */
+    }
+    .col-sm-12.full-height table {
+        max-width: 100%; /* Establece un ancho máximo para la tabla */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        height: 100%; /* Ocupa todo el alto disponible en el contenedor */
+    }
+}
+
+
+@media (max-width: 575px) {
+    .table {
+        display: flex;
+        flex-direction: row;
+    }
+    .table thead {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    }
+    .table tbody {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+    .table tr {
+        display: flex;
+        flex-direction: column;
+    }
+    .table th,
+    .table td {
+        text-align: left;
+    }
+    
+}
+
+/* Estilos para el footer pegado abajo */
+footer#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: #ffc107;
+    line-height: 2px;
+    
+ } /* Cambia el color de fondo si es necesario */
+
+
+
+
+ #footer {
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+    padding: 5px; /* Espaciado interno más pequeño */
+}
+
+#contact h5, #contact h6 {
+    margin: 0px 0; /* Espaciado entre los elementos de texto más pequeño */
 }
