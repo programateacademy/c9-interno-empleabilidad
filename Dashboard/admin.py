@@ -6,6 +6,24 @@ from .models.student import Student
 from .models.cohorteDate import cohorteDate
 from .models.company import Company
 
-admin.site.register(Student)
-admin.site.register(cohorteDate)
-admin.site.register(Company)
+class StudentAdmin(admin.ModelAdmin):
+    list_display = ( 'name', 'cohorte', 'cedula', 'employability', 'company')
+    search_fields = ('name', 'cedula')
+    ordering = ('-cohorte',)
+    
+class cohorteDateAdmin(admin.ModelAdmin):
+    list_display = ('cohorteNumber', 'cohorteStatus', 'numberParticipants')
+    search_fields = ('cohorteNumber',)
+    ordering = ('-cohorteNumber',)
+    
+class CompanyAdmin(admin.ModelAdmin):
+    ordering = ('companyName',)
+    
+admin.site.register(Student, StudentAdmin)
+admin.site.register(cohorteDate, cohorteDateAdmin)
+admin.site.register(Company, CompanyAdmin)
+    
+    
+    
+    
+    
