@@ -1,8 +1,14 @@
-
-body, html, nav{
+*{
     margin: 0;
     padding: 0;
 }
+
+
+
+/* body, html, nav{
+    overflow: hidden;
+
+} */
 
 
   /* Para pantallas más grandes, usa el tamaño original de 300px */
@@ -101,7 +107,7 @@ footer#footer {
 
 
 
- #footer {
+#footer {
     font-size: 14px; /* Tamaño de fuente más pequeño */
     padding: 5px; /* Espaciado interno más pequeño */
 }
