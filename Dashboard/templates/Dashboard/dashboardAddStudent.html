@@ -4,6 +4,7 @@
 
 {% block content %}
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.min.css">
 <link rel="stylesheet" href="../../static/Css/stylesAddStudent.css">
 <br>
 <br>
@@ -29,10 +30,11 @@
                 </div>
             </div>
             <div class="col">
-                <div class="mb-3">
-                    <label class="form-label">Respuesta de la empresa</label>
-                    <input type="text" class="form-control" >
-                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Proceso de empleavilidad</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <br>
                 <div class="dropdown">
                     <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Numero de cohorte
@@ -46,34 +48,37 @@
                   </div>
 
 
-            <div class="container" style="padding-top: 80px;">
-
-                <div class="switch-toggle switch-candy">
-                    <input id="rechazado" name="view" type="radio">
-                    <label for="rechazado">Rechazado</label>
-        
-                    <input id="enproceso" name="view" type="radio" checked>
-                    <label for="enproceso">En Proceso</label>
-        
-                    <input id="contratado" name="view" type="radio">
-                    <label for="contratado">Contratado</label>
-                    
+                  <div class="container" style="padding-top: 80px;">
+                    <div class="switch-toggle switch-candy">
+                        <input id="rechazado" name="view" type="radio">
+                        <label for="rechazado">Rechazado</label>
+                
+                        <input id="enproceso" name="view" type="radio" checked>
+                        <label for="enproceso">En Proceso</label>
+                
+                        <input id="contratado" name="view" type="radio">
+                        <label for="contratado">Contratado</label>
+                        
+                        <a></a>
+                    </div>
                 </div>
-            </div>
+            
         </div>
       </form>
 
       
+<br>
 
-<hr>
-    </div>
     <div class="d-flex justify-content-end">
-        <button type="button" class="btn  btn-lg btn-success">Enviar</button>
+        <button id="borrar" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-outline-danger mr-2">Borrar</button>
+        <button id="enviar" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-lg btn-success">Enviar</button>
     </div>
 
 
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.all.min.js"></script>
 <script src="../../static/Js/scriptAddStudent.js"></script>
+<script src="../../static/Js/sweetAlertAdd.js"></script>
 
 {% endblock  %}
