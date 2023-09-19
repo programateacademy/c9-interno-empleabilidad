@@ -1,104 +1,111 @@
-body {
-    background-image: url(../img/img.png);
+
+body, html, nav{
+    margin: 0;
+    padding: 0;
+}
+
+
+  /* Para pantallas más grandes, usa el tamaño original de 300px */
+nav .imagen {
+    max-width: 220px;
+    width: 100%; /* Asegura que la imagen se ajuste al 100% del ancho del contenedor */
+    height: auto; /* Mantén la relación de aspecto original */
+}
+
+
+
+
+table {
+    margin-bottom: 0px; /* Puedes ajustar el valor (en píxeles u otra unidad) según tu preferencia */
+}
+
+.fondo {
+    
+    margin-bottom: 0;
+    margin-top: 0;
+    background-color: rgba(251, 249, 248, 0.822);
     background-repeat: no-repeat;
-    background-position:center center;
-    background-attachment: fixed;
-    background-size: cover;
-    font-family: Arial, sans-serif;
-  }
-  
-  .container {
-    max-width: 30%;
-    margin: 0 auto;
-    border-radius: 30px;
-  }
+}
 
-
-  
-  /* Estilos del panel */
-  .panel {
-    border: 1px solid #FFC107;
-    border-radius: 5%;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-  
-  .panel {
-    background-color: #FFC107;
-    color: rgb(0, 0, 0);
-    padding: 15px;
-    font-size: larger;
-    text-align: center;
-  }
-  
-  .panel-title{
-    display: inline-block;
-  }
-
-  .container-img{
-    text-align: center;
-  }
+.btn-group button{
+    color: #030303;
+    background-color: rgb(250, 250, 249);
+    width: 200px;
+}
 
 
 
-  /* Estilos del formulario */
-  .form-control {
-    display: block;
+
+
+#contact{
+    margin-top: 0.1rem;
+    line-height: 2px;
+    padding: 0px;
+    margin: 0px;
+}
+
+@media (max-width: 576px) {
+    .no-border-row th,
+    .no-border-row td {
+        border: none; /* Elimina los bordes en pantallas menores a 576px */
+    }
+    .col-sm-12.full-height {
+        height: calc(100vh - 150px); /* Ajusta la altura según sea necesario */
+    }
+    .col-sm-12.full-height table {
+        max-width: 100%; /* Establece un ancho máximo para la tabla */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        height: 100%; /* Ocupa todo el alto disponible en el contenedor */
+    }
+}
+
+
+@media (max-width: 575px) {
+    .table {
+        display: flex;
+        flex-direction: row;
+    }
+    .table thead {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    }
+    .table tbody {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+    .table tr {
+        display: flex;
+        flex-direction: column;
+    }
+    .table th,
+    .table td {
+        text-align: left;
+    }
+    
+}
+
+/* Estilos para el footer pegado abajo */
+footer#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    height: 40px;
-    border: none;
-    border-bottom: 1px solid #E0E0E0;
-    outline: none;
-    border-radius: 10px;
-    padding-left: 1rem;
-    font: 1em sans-serif;
-  }
-  
-  .form-control:focus {
-    border-bottom-color: #ffffff;
-  }
-
-  .btn {
-    display: block;
-    width: 50%;
-    height: 40px;
-    background-color: #000000;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    font-size: large;
-    margin: 0 auto;
-  }
-  
-  .btn:hover {
-    background-color: #1CA631;
-  }
-  
-
-
-  /* Media queries */
-  @media (max-width: 768px) {
+    height: auto;
+    background-color: #ffc107;
+    line-height: 2px;
     
+ } /* Cambia el color de fondo si es necesario */
 
-    
-   /* Estilos para pantallas pequeñas */
-    
-   .row {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-   }
-  
-   .col-md-6 {
-     width: 100%;
-   }
-  
-   .col-md-offset-3 {
-     margin-left: 0;
-   }
 
-   .container {
-    max-width: 60%;
-    margin: 0 auto;
-   }
-  
-  }
+
+
+ #footer {
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+    padding: 5px; /* Espaciado interno más pequeño */
+}
+
+#contact h5, #contact h6 {
+    margin: 0px 0; /* Espaciado entre los elementos de texto más pequeño */
+}
