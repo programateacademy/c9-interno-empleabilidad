@@ -1,17 +1,37 @@
 from django.shortcuts import render, redirect
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth.models import User
-from django.contrib.auth import login
+from django.contrib.auth import login, authenticate
 from django.db import IntegrityError
 from django.contrib.auth import login
 
 
 
+
     # Lógica de la vista aquí
     
-def loginadmin(request):#login para que admin ingrese
-    return render (request, 'index.html')
+    #login para que admin ingrese
+def loginadmin(request):
+    if request.method == 'GET':
+        return render(request, 'index.html', {"form": AuthenticationForm})
+    else:
+        email = request.POST.get('email')
+        password = request.POST.get('password')
+        user = authenticate(request, email=email, password=password)
+        if user is None:
+            return render(request, 'index.html', {"form": AuthenticationForm, "error": "Username or password is incorrect."})
 
+        login(request, user)
+        return redirect('cohortes')
+
+def cohortes(request):  # para agregar cohortes
+
+    return render(request, 'Dashboard/dashboardCohorte.html')
+
+
+
+def cohortes(request):  #para agregar cohortes
+    return render(request, 'Dashboard/dashboardCohorte.html')
 
 
 
@@ -20,8 +40,6 @@ def loginadmin(request):#login para que admin ingrese
 def addcohorte(request):  #para agregar cohortes
     return render(request, 'Dashboard/dashboardAddCohorte.html')
 
-def cohortes(request):  #para agregar cohortes
-    return render(request, 'Dashboard/dashboardCohorte.html')
 
 
 def addstudent(request): 
@@ -29,6 +47,12 @@ def addstudent(request):
 
 def students(request): 
     return render(request, 'Dashboard/dashboardStudent.html')
+
+
+
+
+
+
 
 
 
