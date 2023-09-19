@@ -1,3 +1,11 @@
-from django.db import models
+from .models.cohorteDate import cohorteDate
+from .models.company import Company
+from .models.student import Student
+from .models.email import customUser
 
-# Create your models here.
+
+
+__all__ = ['cohorteDate', 'Company', 'Student', 'customUser']
+
+
+
