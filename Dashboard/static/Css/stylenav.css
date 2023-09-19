@@ -9,6 +9,9 @@
 }
 
 .logo {
-  width: 100px; 
+  width: 98px; 
   height: 25px; 
+}
+.icon-search {
+  fill: black;
 }
