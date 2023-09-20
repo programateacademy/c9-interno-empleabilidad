@@ -8,7 +8,7 @@ from .cohorteDate import cohorteDate
 class Student (models.Model):
     name = models.CharField(max_length=50)
     cohorte = models.ForeignKey(cohorteDate, default=None, null=True, on_delete=models.SET_NULL )
-    cedula = models.IntegerField(validators=[MaxValueValidator(999999999999)])
+    dni = models.IntegerField(validators=[MaxValueValidator(999999999999)])
     password = models.CharField(max_length=128)
     company = models.ForeignKey(Company, null=True, on_delete= models.SET_NULL)
     employability = models.BooleanField(default=False)
