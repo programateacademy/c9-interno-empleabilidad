@@ -7,8 +7,8 @@ from .models.cohorteDate import cohorteDate
 from .models.company import Company
 
 class StudentAdmin(admin.ModelAdmin):
-    list_display = ( 'name', 'cohorte', 'cedula', 'employability', 'company')
-    search_fields = ('name', 'cedula')
+    list_display = ( 'name', 'cohorte', 'dni', 'employability', 'company')
+    search_fields = ('name', 'dni')
     ordering = ('-cohorte',)
     
 class cohorteDateAdmin(admin.ModelAdmin):
