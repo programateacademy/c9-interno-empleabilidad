@@ -8,16 +8,28 @@
 
 .my-section {
   min-height: calc(100vh - 100px);
-  padding-top: 55px;
+  padding-top: 50px;
+  padding-bottom: 30px;
 }
 
-table tr {
+.first-table tr {
   text-align: center;
   vertical-align: middle;
   height: 60px; 
 }
 
-th, td {
-  width: 33.33%; /* columnas iguales */
+.first-table th,.first-table td {
+  width: 33.33%;
+  text-align: center;
+}
+
+.second-table tr {
+  text-align: center;
+  vertical-align: middle;
+  height: 60px; 
+}
+
+.second-table th,.second-table td {
+  width: 25%;
   text-align: center;
 }
