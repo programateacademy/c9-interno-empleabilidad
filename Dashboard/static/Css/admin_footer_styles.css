@@ -1,0 +1,23 @@
+/* Archivo: static/css/admin_footer_styles.css */
+
+/* Estilos generales para el footer */
+#admin-footer {
+    background-color: #F2BC1B; /* Color amarillo */
+    padding: 5px 0;
+    color: #000; /* Color del texto */
+    text-align: center; /* Alinea el contenido horizontalmente en el centro */
+}
+
+/* Estilo para el contenedor del contenido */
+.footer-content {
+    display: flex; /* Utiliza el modelo de caja flexible */
+    flex-direction: column; /* Cambia la dirección de flexión a vertical */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+/* Estilo para el texto de contacto */
+.footer-content p {
+    font-family: 'Montserrat', sans-serif; /* Establece la fuente a Montserrat */
+    margin: 0; /* Elimina el margen superior e inferior para centrar verticalmente el texto */
+    margin-top: 2px; /* Añade un margen superior para separar el texto de la imagen */
+}
