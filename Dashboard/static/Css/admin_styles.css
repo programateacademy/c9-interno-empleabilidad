@@ -14,7 +14,7 @@
 /* Estilo para el título */
 .brand-title {
     color: #000000; /* Color negro para el título */
-    margin-left: 3rem; /* Espacio entre la imagen y el título */
+    margin-left: 1rem; /* Espacio entre la imagen y el título */
     font-size: 15px; /* Tamaño de fuente para el título */
     font-family: 'Montserrat', sans-serif;
 }
@@ -27,7 +27,52 @@
 
 /* Cambia el color del botón "Log in" */
 input[type="submit"] {
-    background-color: #0; /* Cambia este valor al color que desees */
+    background-color: #000000; /* Cambia este valor al color que desees */
     color: #FFFFFF; /* Cambia el color del texto si es necesario */
-    /* Otros estilos que desees aplicar al botón de inicio de sesión */
+    
+}
+
+.module h2, .module caption, .inline-group h2 {
+    background: #f2bc1bc2;
+
+}
+
+#recent-actions-module {
+    display: none;
+  }
+  
+  
+body {
+    font-family:"Montserrat", sans-serif;
+}
+
+div.breadcrumbs {
+    background: #f2bc1bc2;
+}
+
+/* Estilos para el botón */
+.object-tools a:link,
+.object-tools a:visited {
+    display: block;
+    float: left;
+    padding: 3px 20px; /* Aumentamos el espacio horizontal del botón */
+    background: #40bd53; /* Fondo verde */
+    color: var(--object-tools-fg);
+    font-weight: 400;
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    position: relative; /* Agregamos posición relativa para posicionar el pseudo-elemento */
+}
+
+/* Pseudo-elemento para el signo de "+" */
+.object-tools a:link::after,
+.object-tools a:visited::after {
+    content: "+"; /* Agregamos el signo "+" como contenido del pseudo-elemento */
+    position: absolute; /* Posicionamos el pseudo-elemento de forma absoluta */
+    right: 5px; /* Ajusta la posición del signo "+" en el botón */
+    top: 50%; /* Centra verticalmente el signo "+" */
+    transform: translateY(-50%); /* Centra verticalmente el signo "+" */
+    font-weight: bold; /* Añade negrita al signo "+" para que sea más visible */
+    font-size: 1rem; /* Tamaño de fuente del signo "+" (ajustado) */
 }
