@@ -25,4 +25,9 @@
 }
 
 
-
+/* Cambia el color del botón "Log in" */
+input[type="submit"] {
+    background-color: #0; /* Cambia este valor al color que desees */
+    color: #FFFFFF; /* Cambia el color del texto si es necesario */
+    /* Otros estilos que desees aplicar al botón de inicio de sesión */
+}
