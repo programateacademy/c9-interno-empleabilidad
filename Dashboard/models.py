@@ -1,11 +1,7 @@
-from .models.cohorteDate import cohorteDate
-from .models.company import Company
-from .models.student import Student
-from .models.email import customUser
+from .models.company import Empresa
+from .models.cohorteDate import Cohorte
+from .models.student import Estudiante
 
 
 
-__all__ = ['cohorteDate', 'Company', 'Student', 'customUser']
-
-
-
+__all__ = ['Cohorte', 'Empresa', 'Estudiante']
