@@ -1,11 +1,16 @@
-/* Archivo: static/css/admin_footer_styles.css */
-
 /* Estilos generales para el footer */
 #admin-footer {
     background-color: #F2BC1B; /* Color amarillo */
-    padding: 5px 0;
     color: #000; /* Color del texto */
     text-align: center; /* Alinea el contenido horizontalmente en el centro */
+    position: absolute; /* Mantén position como absolute */
+    left: 0;
+    width: 100%;
+    padding: 10px 0; /* Espaciado interno del footer (ajustado) */
+    clear: both; /* Evita que elementos floten sobre el footer */
+    transition: transform 0.3s; /* Agregamos una transición para una apariencia suave */
+    transform: translateY(100%); /* Inicialmente oculta el footer */
+    bottom: 0; /* Agregamos esto para mantener el footer en la parte inferior de la página */
 }
 
 /* Estilo para el contenedor del contenido */
@@ -19,5 +24,6 @@
 .footer-content p {
     font-family: 'Montserrat', sans-serif; /* Establece la fuente a Montserrat */
     margin: 0; /* Elimina el margen superior e inferior para centrar verticalmente el texto */
-    margin-top: 2px; /* Añade un margen superior para separar el texto de la imagen */
+    margin-top: 5px; /* Añade un margen superior (ajustado) */
+    font-size: 0.75rem; /* Tamaño de fuente ajustado */
 }
