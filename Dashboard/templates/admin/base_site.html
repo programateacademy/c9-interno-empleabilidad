@@ -1,7 +1,7 @@
 {% extends "admin/base.html" %}
 {% load static %}
 
-{% block branding %}
+{% block branding %}.
     <h1 id="site-name">
         <a href="{% url 'admin:index' %}">
             <div class="brand">
@@ -17,19 +17,9 @@
 <link rel="stylesheet" type="text/css" href="{% static 'css/admin_styles.css' %}">
 {% endblock %}
 
+{% block footer %}
+    {% include "admin/admin_footer.html" %}
+{% endblock %}
 
 
 
-{% comment %}  
-{% extends "admin/base.html" %}
-{% load static %}
-
-{% block branding %}
-        <div class = "logo">
-            <a href="{% url 'admin:index' %}">
-            <img src="{% static 'img/Logo.png' %}" width="210" alt="Mi Nuevo Logo">
-        </div>
-        <div class = "titulo">
-            <h2>Proceso de empleabilidad lore</h2>
-        </div>
-{% endblock %} {% endcomment %}
