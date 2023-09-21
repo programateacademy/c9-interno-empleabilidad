@@ -1,25 +1,37 @@
-document.getElementById('borrar').addEventListener('click', function() {
-    Swal.fire({
-        title : 'Aprobar cambios',
-        text : '¿Estas seguro que quieres hacer los cambios?',
-        confirmButtonColor: '#1CA631',
-        icon: 'warning',
-        confirmButtonText: 'Guardar cambios',
-        showCancelButton: true,
-        cancelButtonText: 'Cerrar',
-        cancelButtonColor: '#F0313C'
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.getElementById('borrar').addEventListener('click', function() {
+        Swal.fire({
+            title: '¿Estás seguro de guardar los cambios?',
+            icon: 'warning',
+            showDenyButton: true,
+            showCancelButton: true,
+            confirmButtonText: 'Guardar',
+            confirmButtonColor: '#1CA631',
+            denyButtonText: 'No guardar',
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire('¡Cambios guardados!', '', 'success')
+            } else if (result.isDenied) {
+                Swal.fire('NO se guardaron los cambios', '', 'info')
+            }
+        })
     });
-});
 
-document.getElementById('enviar').addEventListener('click', function() {
-    Swal.fire({
-        title : 'Aprobar cambios',
-        text : '¿Estas seguro que quieres hacer los cambios?',
-        confirmButtonColor: '#1CA631',
-        icon: 'warning',
-        confirmButtonText: 'Guardar cambios',
-        showCancelButton: true,
-        cancelButtonText: 'Cerrar',
-        cancelButtonColor: '#F0313C'
+    document.getElementById('enviar').addEventListener('click', function() {
+        Swal.fire({
+            title: '¿Estás seguro de guardar los cambios?',
+            icon: 'warning',
+            showDenyButton: true,
+            showCancelButton: true,
+            confirmButtonText: 'Guardar',
+            confirmButtonColor: '#1CA631',
+            denyButtonText: 'No guardar',
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire('¡Cambios guardados!', '', 'success')
+            } else if (result.isDenied) {
+                Swal.fire('NO se guardaron los cambios', '', 'info')
+            }
+        })
     });
 });
