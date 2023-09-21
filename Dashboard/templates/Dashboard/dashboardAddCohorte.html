@@ -1,9 +1,44 @@
 {% extends 'Dashboard/base.html' %}
 
+
 {% block  title %} Agrega Cohorte {% endblock %} 
 
 {% block content %}
+{%load static%}
 
-<h1>Vista para agregar Cohorte</h1>
+<link rel="stylesheet" href="{% static '../static/Css/styleaddcohorte.css' %}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <section class="my-section">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead style="background-color: #FFDC73">
+                <tr>
+                    <th scope="col" rowspan="3" class="add">Agregar Cohorte</th>
+                </tr>
+            </table>
+        </div>
+            <div class="container" id="add-cohorte">
+                <div class="content-container">
+                    <div class="titulo"> Numero de la cohorte</div>
+                        <input type="number" class="input" placeholder="1"></input>
+                        <div class="container-fluid2">
+                            <div class="row">
+                                <div class="bauble_box">
+                                    <p>Estado de la Cohorte</p> 
+                                    <input class="bauble_input" id="bauble_check" name="bauble" type="checkbox">
+                                <label class="bauble_label" for="bauble_check">Toggle</label>
+                            </div>
+                    </div>
+                    </div>
+                    <div class="container-btn">
+                        <button class="btn btn-primary">Save
+                        </button>
+                        <button class="btn btn-secundary">Add User
+                        </button>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
 
 {% endblock  %}
