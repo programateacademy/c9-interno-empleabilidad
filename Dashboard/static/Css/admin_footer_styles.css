@@ -6,7 +6,7 @@
     position: absolute; /* Mantén position como absolute */
     left: 0;
     width: 100%;
-    padding: 10px 0; /* Espaciado interno del footer (ajustado) */
+    padding: 5px 0; /* Espaciado interno del footer (ajustado) */
     clear: both; /* Evita que elementos floten sobre el footer */
     transition: transform 0.3s; /* Agregamos una transición para una apariencia suave */
     transform: translateY(100%); /* Inicialmente oculta el footer */
@@ -20,10 +20,20 @@
     align-items: center; /* Centra verticalmente los elementos */
 }
 
+/* Estilo para la imagen de contacto */
+.footer-content img {
+    width: 120px; /* Reduce el tamaño de la imagen */
+}
+
 /* Estilo para el texto de contacto */
 .footer-content p {
     font-family: 'Montserrat', sans-serif; /* Establece la fuente a Montserrat */
     margin: 0; /* Elimina el margen superior e inferior para centrar verticalmente el texto */
     margin-top: 5px; /* Añade un margen superior (ajustado) */
     font-size: 0.75rem; /* Tamaño de fuente ajustado */
+}
+
+/* Agrega margen inferior al nav con clase "sticky" */
+#nav-sidebar.sticky {
+    margin-bottom: 80px; /* Ajusta el valor según sea necesario */
 }
