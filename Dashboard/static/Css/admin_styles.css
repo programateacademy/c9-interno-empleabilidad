@@ -1,0 +1,28 @@
+/* Cambia el color de fondo del encabezado completo */
+#header  {
+    background-color: #F2BC1B; /* Cambia este valor al color que desees */
+    /* Añade otros estilos si es necesario */
+}
+
+/* Cambia el color del enlace del nombre del sitio en el encabezado */
+#site-name a {
+    color: #ffffff; /* Cambia el color del enlace si es necesario */
+    display: flex; /* Permite que los elementos hijos se alineen horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos hijos */
+}
+
+/* Estilo para el título */
+.brand-title {
+    color: #000000; /* Color negro para el título */
+    margin-left: 3rem; /* Espacio entre la imagen y el título */
+    font-size: 15px; /* Tamaño de fuente para el título */
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Ocultar el enlace "VIEW SITE" en la barra de navegación */
+#header div.brand a.viewsitelink {
+    display: none;
+}
+
+
+

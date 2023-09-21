@@ -1,0 +1,35 @@
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block branding %}
+    <h1 id="site-name">
+        <a href="{% url 'admin:index' %}">
+            <div class="brand">
+                <img src="{% static 'img/Logo.png' %}" width="210" alt="Mi Nuevo Logo">
+            </div>
+            <div class="brand-title">Proceso de empleabilidad</div>
+        </a>
+    </h1>
+{% endblock %}
+
+
+{% block extrahead %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/admin_styles.css' %}">
+{% endblock %}
+
+
+
+
+{% comment %}  
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block branding %}
+        <div class = "logo">
+            <a href="{% url 'admin:index' %}">
+            <img src="{% static 'img/Logo.png' %}" width="210" alt="Mi Nuevo Logo">
+        </div>
+        <div class = "titulo">
+            <h2>Proceso de empleabilidad lore</h2>
+        </div>
+{% endblock %} {% endcomment %}
