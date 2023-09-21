@@ -12,6 +12,10 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 import os
 from pathlib import Path
+from django.utils.translation import gettext_lazy as _
+
+# Resto de la configuración de settings.py
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -39,9 +43,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Home',
-
+    'Home'
 ]
+
+X_FRAME_OPTIONS='SAMEORIGIN'
 
 MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -110,9 +115,18 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
+# settings.py
+
 LANGUAGE_CODE = 'es'
 
-TIME_ZONE = 'UTC'
+LANGUAGES = [
+    ('es', _('Spanish')),
+]
+
+USE_I18N = True
+
+
+TIME_ZONE = 'America/Bogota'
 
 USE_I18N = True
 
