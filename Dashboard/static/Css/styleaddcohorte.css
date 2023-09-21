@@ -1,7 +1,8 @@
 
-
 body{
-  background-color: #D9D9D9;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
 }
 
 .add{
@@ -9,13 +10,33 @@ body{
 
 }
 
+
+
 .table-responsive{
+  display: flex;
   position: relative;
+  top: -1rem;
 }
 
+.container{
+  background-color: #d9d9d9 ;
+  position: relative;
+  width: 100%;
+
+}
+
+
+
+.table-striped {
+  overflow-x: auto; /* Permite el scroll horizontal */
+  top: 0.5rem;
+  position: relative;
+}
 .input{
-  border-color: #D9D9D9;
+  border-color: #4d4d4d;
   width: 15rem;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
 }
 
 .titulo{
@@ -30,7 +51,7 @@ body{
 .row{
 
   margin-top: 2rem;
-  width: 13rem;
+  width: 20rem;
   position: relative;
   border-top: 10rem;
 }
@@ -46,44 +67,7 @@ body{
 
 }
 
-.ellipse-182,
-.ellipse-182 * {
-  box-sizing: border-box;
-}
-.ellipse-182 {
-  background: #73db33;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  position: relative;
-  display: flex;
-  justify-content:right;
-  margin-left:2% ;
-  top: 3px;
-  right: 5px;
 
-
-
-}
-
-.ellipse,
-.ellipse * {
-  box-sizing: border-box;
-}
-.ellipse {
-  background: #db3333;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  position: relative;
-  display: flex;
-  justify-content:right;
-  margin-left:3% ;
-  top: 3px;
-  right: 5px;
-
-
-}
 .col-1{
   background-color: #ffe3ad;
   border-radius: 2rem;
@@ -96,4 +80,94 @@ body{
   top: 2rem;
   position: relative;
 
+}
+
+.bauble_box .bauble_label {
+  background: rgb(255, 255, 255);
+  background-position: 62px 5px;
+  background-repeat: no-repeat;
+  background-size: auto 5px;
+  border: 0;
+  border-radius: 50px;
+  box-shadow: inset 0 10px 20px rgba(0,0,0,.4), 0 -1px 0px rgba(0,0,0,.2), inset 0 -1px 0px #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0;
+  height: 40px;
+  position: relative;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  width: 8rem;
+  left: 2rem;
+}
+
+.bauble_box .bauble_label:before {
+  background-color: rgb(255, 255, 255);
+  background-position: 0 0;
+  background-repeat: repeat;
+  background-size: 30% auto;
+  border-radius: 50%;
+  box-shadow: inset 0 -5px 25px #3fa500, 0 10px 20px rgba(0,0,0,.4);
+  content: '';
+  display: block;
+  height: 30px;
+  left: 5px;
+  position: absolute;
+  top: 6px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  width: 30px;
+  z-index: 2;
+}
+
+.bauble_box input.bauble_input {
+  opacity: 0;
+  z-index: 0;
+}
+
+/* Checked */
+.bauble_box input.bauble_input:checked + .bauble_label {
+  background-color: rgb(255, 255, 255);
+}
+
+.bauble_box input.bauble_input:checked + .bauble_label:before {
+  background-position: 150% 0;
+  box-shadow: inset 0 -5px 25px #c40808, 0 10px 20px rgb(0,0,0,.4);
+  left: calc( 100% - 35px );
+}
+
+
+
+.container-btn{
+  position: relative;
+  height: 8%;
+}
+
+.btn{
+  color: #fff;
+}
+
+.btn-primary{
+  background:#00ff22 ;
+  border-color: #00ff22;
+  font-size: x-large;
+  position: relative;
+  width: 7rem;
+  left: 70%;
+
+}
+
+
+.btn-secundary{
+  position: relative;
+  font-size: x-large;
+  background:#f79d0b !important ;
+  left: 70%;
+
+
+}
+
+p{
+  display: flex !important;
+  font-size: x-large;
 }
