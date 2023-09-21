@@ -12,11 +12,6 @@ from django.contrib.auth import login
 def loginadmin(request):#login para que admin ingrese
     return render (request, 'index.html')
 
-
-
-
-
-
 def addcohorte(request):  #para agregar cohortes
     return render(request, 'Dashboard/dashboardAddCohorte.html')
 
