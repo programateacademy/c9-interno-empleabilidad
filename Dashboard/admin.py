@@ -2,12 +2,10 @@ from django.contrib import admin
 
 # Register your models here.
 
-from .models.student import Student
-from .models.cohorteDate import cohorteDate
-from .models.company import Company
-from .models.email import customUser
+from .models.student import Estudiante
+from .models.cohorteDate import Cohorte
+from .models.company import Empresa
 
-admin.site.register(Student)
-admin.site.register(cohorteDate)
-admin.site.register(Company)
-admin.site.register(customUser)
+admin.site.register(Estudiante)
+admin.site.register(Cohorte)
+admin.site.register(Empresa)
