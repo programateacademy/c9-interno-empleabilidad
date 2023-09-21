@@ -24,6 +24,11 @@
     display: none;
 }
 
+/* Ocultar el enlace "Ver el sitio" en el panel de administración */
+#user-tools a[href="/"] {
+    display: none;
+}
+
 
 /* Cambia el color del botón "Log in" */
 input[type="submit"] {
