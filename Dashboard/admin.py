@@ -3,9 +3,9 @@ from django.contrib import admin
 
 # Register your models here.
 
-from .models.student import Student
-from .models.cohorteDate import cohorteDate
-from .models.company import Company
+from .models.student import Estudiante
+from .models.cohorteDate import Cohorte
+from .models.company import Empresa
 
 # admin.site.index_title = _('Bienvenido')
 # admin.site.site_header = _('Panel de administración de tu sitio')
@@ -33,18 +33,8 @@ class cohorteDateAdmin(admin.ModelAdmin):
 class CompanyAdmin(admin.ModelAdmin):
     ordering = ('companyName',)
     
-# class Studentviews(Student.Model):
-#     list_display = ('name', 'employability', 'company')
     
-admin.site.register(Student, StudentAdmin)
-admin.site.register(cohorteDate, cohorteDateAdmin)
-admin.site.register(Company, CompanyAdmin)
+admin.site.register(Estudiante)
+admin.site.register(Cohorte)
+admin.site.register(Empresa)
 
-
-# admin.site.register(Student, Studentviews)
-
-    
-    
-    
-    
-    
