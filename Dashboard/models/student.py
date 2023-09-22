@@ -1,28 +1,31 @@
+from django.contrib.auth.models import AbstractUser
 from django.db import models
 from django.core.validators import MaxValueValidator
 from django.urls import reverse
 from django.contrib.auth.hashers import make_password
-from .company import Company
-from .cohorteDate import cohorteDate
+from .company import Empresa
+from .cohorteDate import Cohorte
 
-class Student (models.Model):
-    name = models.CharField(max_length=50)
-    cohorte = models.ForeignKey(cohorteDate, default=None, null=True, on_delete=models.SET_NULL )
-    cedula = models.IntegerField(validators=[MaxValueValidator(999999999999)])
-    password = models.CharField(max_length=128)
-    company = models.ForeignKey(Company, null=True, on_delete= models.SET_NULL)
-    employability = models.BooleanField(default=False)
+class Estudiante (models.Model):
+    nombre = models.CharField(max_length=50)
+    cohorte = models.ForeignKey(Cohorte, default=None, null=True, on_delete=models.SET_NULL )
+    dni = models.IntegerField(validators=[MaxValueValidator(999999999999)])
+    contraseña = models.CharField(max_length=128)
+    empresa = models.ForeignKey(Empresa, null=True, on_delete= models.SET_NULL)
+    empleabilidad = models.BooleanField(default=False)
+
+
+
 
     def save(self, *args, **kwargs):
         if not self.cohorte:
-            current_cohorte = cohorteDate.objects.latest('cohorteNumber')
+            current_cohorte = Cohorte.objects.latest('')
             self.cohorte = current_cohorte
-        self.password = make_password(self.password)
+        self.contraseña = make_password(self.contraseña)
         super().save(*args, **kwargs)
 
     def __str__(self):
-        return self.name
-    
+        return self.nombre
+
     def get_absolute_url(self):
-        return reverse("student_detail",  args=[str(self.id)])
-    
+        return reverse("student_detail", args=[str(self.id)])

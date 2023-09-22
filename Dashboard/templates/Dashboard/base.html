@@ -12,9 +12,10 @@
 </head>
 
 <body>
+    {% if user.is_authenticated %}
     {% include 'Dashboard/nav.html' %}
-
-  
+    {% endif %}
+    
 
     {% block content %}
     {% endblock %}

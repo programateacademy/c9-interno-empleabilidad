@@ -1,3 +1,7 @@
-from django.db import models
+from .models.company import Empresa
+from .models.cohorteDate import Cohorte
+from .models.student import Estudiante
 
-# Create your models here.
+
+
+__all__ = ['Cohorte', 'Empresa', 'Estudiante']
