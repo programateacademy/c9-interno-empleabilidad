@@ -1,16 +1,13 @@
 from django.db import models
 from django.urls import reverse
 
-class cohorteDate (models.Model):
-    cohorteNumber = models.IntegerField()
-    cohorteStatus = models.BooleanField(default=False)
-    numberParticipants = models.IntegerField(default=0)
-
-    # def __str__(self):
-    #     return self.cohorteNumber
+class Cohorte (models.Model):
+    numerodecohorte = models.IntegerField()
+    estadodelacorhorte = models.BooleanField(default=False)
+    numerodeparticipantes = models.IntegerField(default=0)
 
     def __str__(self):
-        return str(self.cohorteNumber)
+        return str(self.numerodecohorte)
 
 
     def get_absolute_url(self):
