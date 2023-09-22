@@ -7,38 +7,38 @@
 {%load static%}
 
 <link rel="stylesheet" href="{% static '../static/Css/styleaddcohorte.css' %}">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <section class="my-section">
         <div class="table-responsive">
             <table class="table table-striped">
-                <thead style="background-color: #FFDC73">
+                <thead>
                 <tr>
                     <th scope="col" rowspan="3" class="add">Agregar Cohorte</th>
                 </tr>
             </table>
         </div>
-            <div class="container" id="add-cohorte">
-                <div class="content-container">
-                    <div class="titulo"> Numero de la cohorte</div>
-                        <input type="number" class="input" placeholder="1"></input>
-                        <div class="container-fluid2">
-                            <div class="row">
-                                <div class="bauble_box">
-                                    <p>Estado de la Cohorte</p> 
-                                    <input class="bauble_input" id="bauble_check" name="bauble" type="checkbox">
-                                <label class="bauble_label" for="bauble_check">Toggle</label>
-                            </div>
-                    </div>
-                    </div>
-                    <div class="container-btn">
-                        <button class="btn btn-primary">Save
-                        </button>
-                        <button class="btn btn-secundary">Add User
-                        </button>
+        <div class="form-group">
+            <div class="container">
+                <p class="n-cohorte">Numero de la Cohorte</p>
+                    <div class="col">
+                        <input class="input" id="number-cohorte" type="number" placeholder="123456789" required="number-cohorte">
                     </div>
                 </div>
-            </div> 
+                <br>
+                <div class="container container-estado">
+            <p class="e-cohorte"> Estado de la Cohorte</p>
+            <p class="e-title">(Cohorte Activa o No Activa)</p>
+        <div class="container container-switch">
+            <div class="bauble_box">
+                <input class="bauble_input" id="bauble_check" name="bauble" type="checkbox">
+                <label class="bauble_label" for="bauble_check">Toggle</label>
+            </div>
         </div>
+        <br><br><br>
+        <div class="container-btn" id="btn">
+            <button class="btn btn-primary">Save</button>
+            <button class="btn btn-secundary">Add User</button>
+        </div>
+    </div>                                  
     </section>
 
 {% endblock  %}
