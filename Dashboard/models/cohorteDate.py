@@ -4,7 +4,7 @@ from django.urls import reverse
 class Cohorte (models.Model):
     numerodecohorte = models.IntegerField()
     estadodelacorhorte = models.BooleanField(default=False)
-    numerodeparticipantes = models.IntegerField(default=0)
+    numerodeparticipantes = models.AutoField(primary_key=True, editable=False)
 
     def __str__(self):
         return str(self.numerodecohorte)
