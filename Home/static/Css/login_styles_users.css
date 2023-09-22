@@ -115,8 +115,9 @@ img.edu-blanco{
     z-index: 1;
     bottom: 0;
     flex-wrap:nowrap;
-    width: 39%;
+    width: 38%;
     right: 0;
+    margin-right: 0.9rem;
 }
 
 
@@ -165,7 +166,7 @@ img.edu-blanco{
 
         
     .formu{
-        margin-top: 14rem;
+        margin-top: 12rem;
         margin-right: 0.8rem;
     }
     
@@ -173,7 +174,31 @@ img.edu-blanco{
 
 
 
+@media screen and (max-width: 1024px) and (max-height: 600px) {
+    
+    .formu{
+        margin-top: 6rem;
+        margin-right: 0rem;
+    }
+  }
 
+  @media screen and (max-width: 820px) and (max-height: 1180px) {
+
+    img.edu-blanco{
+       margin-bottom: 1rem;
+       margin-right: 1rem;
+    }
+  }
+
+
+  
+  @media screen and (max-width: 912px) and (max-height: 1368px) {
+
+    img.edu-blanco{
+       margin-bottom: 1rem;
+       margin-right: 1rem;
+    }
+  }
 
 
 
@@ -338,6 +363,19 @@ div.programate {
         margin-left: 1.5rem;
        
       }
+      img.imagen-inferior{
+        min-width: 410px;
+        min-height: 100px;
+        max-width: 500px;
+        max-height: 200px;
+    }
+
+    img.edu-blanco{
+        min-width: 330px;
+        min-height: 100px;
+        max-width: 200px;
+        max-height: 100px;
+    }
     
   }
 
@@ -373,6 +411,15 @@ div.programate {
 
     div.card,.formu { 
         margin-left: 1px;
+       
+      }
+    
+  }
+
+  @media (max-width: 370px){
+
+    div.card,.formu { 
+        margin-left: 3px;
        
       }
     
