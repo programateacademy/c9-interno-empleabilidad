@@ -3,7 +3,7 @@
     background-color: #F2BC1B; /* Color amarillo */
     color: #000; /* Color del texto */
     text-align: center; /* Alinea el contenido horizontalmente en el centro */
-    position: absolute; /* Mantén position como absolute */
+    position: fixed; /* Mantén position como absolute */
     left: 0;
     width: 100%;
     padding: 5px 0; /* Espaciado interno del footer (ajustado) */
