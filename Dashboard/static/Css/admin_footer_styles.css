@@ -1,17 +1,15 @@
-/* Estilos generales para el footer */
+/* Estilo para el footer */
 #admin-footer {
-    background-color: #F2BC1B; /* Color amarillo */
-    color: #000; /* Color del texto */
-    text-align: center; /* Alinea el contenido horizontalmente en el centro */
-    position: fixed; /* Mantén position como absolute */
+    background-color: #F2BC1B;
+    color: #000;
+    text-align: center;
+    position: absolute; /* Cambia a posición fija */
     left: 0;
     width: 100%;
-    padding: 5px 0; /* Espaciado interno del footer (ajustado) */
-    clear: both; /* Evita que elementos floten sobre el footer */
-    transition: transform 0.3s; /* Agregamos una transición para una apariencia suave */
-    transform: translateY(100%); /* Inicialmente oculta el footer */
-    bottom: 0; /* Agregamos esto para mantener el footer en la parte inferior de la página */
+    padding: 5px 0;
+    bottom: 0;
 }
+
 
 /* Estilo para el contenedor del contenido */
 .footer-content {
@@ -36,4 +34,14 @@
 /* Agrega margen inferior al nav con clase "sticky" */
 #nav-sidebar.sticky {
     margin-bottom: 80px; /* Ajusta el valor según sea necesario */
+}
+
+body {
+    margin-bottom: 100px; /* Ajusta el valor según sea necesario */
+}
+
+/* Estilo para el footer en la vista especial */
+#admin-footer.special-footer {
+    position: fixed; /* Cambia a posición fija para la vista especial */
+    
 }
