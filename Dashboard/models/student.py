@@ -21,9 +21,11 @@ class Estudiante (models.Model):
     empleabilidad = models.CharField(max_length=15, choices=OPCIONES, default='Empleado')
 
 
+
     def save(self, *args, **kwargs):
-        self.contraseña = make_password(self.contraseña)
         super().save(*args, **kwargs)
+        if self.cohorte:
+            self.cohorte.actualizar_numerodeestudiantes()
 
 
     def __str__(self):
