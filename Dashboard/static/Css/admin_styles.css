@@ -1,39 +1,37 @@
-/* Cambia el color de fondo del encabezado completo */
+
 #header  {
-    background-color: #F2BC1B; /* Cambia este valor al color que desees */
-    /* Añade otros estilos si es necesario */
+    background-color: #F2BC1B; 
 }
 
-/* Cambia el color del enlace del nombre del sitio en el encabezado */
 #site-name a {
-    color: #ffffff; /* Cambia el color del enlace si es necesario */
-    display: flex; /* Permite que los elementos hijos se alineen horizontalmente */
-    align-items: center; /* Centra verticalmente los elementos hijos */
+    color: #ffffff; 
+    display: flex; 
+    align-items: center; 
 }
 
-/* Estilo para el título */
+
 .brand-title {
-    color: #000000; /* Color negro para el título */
-    margin-left: 1rem; /* Espacio entre la imagen y el título */
-    font-size: 15px; /* Tamaño de fuente para el título */
+    color: #000000;
+    margin-left: 1rem; 
+    font-size: 15px;
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Ocultar el enlace "VIEW SITE" en la barra de navegación */
+
 #header div.brand a.viewsitelink {
     display: none;
 }
 
-/* Ocultar el enlace "Ver el sitio" en el panel de administración */
+
 #user-tools a[href="/"] {
     display: none;
 }
 
 
-/* Cambia el color del botón "Log in" */
+
 input[type="submit"] {
-    background-color: #000000; /* Cambia este valor al color que desees */
-    color: #FFFFFF; /* Cambia el color del texto si es necesario */
+    background-color: #000000; 
+    color: #FFFFFF; 
     
 }
 
@@ -44,9 +42,9 @@ input[type="submit"] {
 
 #recent-actions-module {
     display: none;
-  }
-  
-  
+}
+
+
 body {
     font-family:"Montserrat", sans-serif;
 }
@@ -55,29 +53,29 @@ div.breadcrumbs {
     background: #f2bc1bc2;
 }
 
-/* Estilos para el botón */
+
 .object-tools a:link,
 .object-tools a:visited {
     display: block;
     float: left;
-    padding: 3px 20px; /* Aumentamos el espacio horizontal del botón */
-    background: #40bd53; /* Fondo verde */
+    padding: 3px 20px; 
+    background: #40bd53; 
     color: var(--object-tools-fg);
     font-weight: 400;
     font-size: 0.6875rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    position: relative; /* Agregamos posición relativa para posicionar el pseudo-elemento */
+    position: relative; 
 }
 
-/* Pseudo-elemento para el signo de "+" */
+
 .object-tools a:link::after,
 .object-tools a:visited::after {
-    content: "+"; /* Agregamos el signo "+" como contenido del pseudo-elemento */
-    position: absolute; /* Posicionamos el pseudo-elemento de forma absoluta */
-    right: 5px; /* Ajusta la posición del signo "+" en el botón */
-    top: 50%; /* Centra verticalmente el signo "+" */
-    transform: translateY(-50%); /* Centra verticalmente el signo "+" */
-    font-weight: bold; /* Añade negrita al signo "+" para que sea más visible */
-    font-size: 1rem; /* Tamaño de fuente del signo "+" (ajustado) */
+    content: "+"; 
+    position: absolute; 
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%); 
+    font-weight: bold;
+    font-size: 1rem; 
 }

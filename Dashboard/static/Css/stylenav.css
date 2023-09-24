@@ -30,7 +30,7 @@
   border: 1px solid #ccc;
   padding: 30px;
   position: absolute;
-  bottom: 40px; /* Ajusta la posición vertical */
-  left: 10px; /* Ajusta la posición horizontal */
+  bottom: 40px; 
+  left: 10px; 
   border-radius: 20px;
 }
