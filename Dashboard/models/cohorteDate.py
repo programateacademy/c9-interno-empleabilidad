@@ -1,5 +1,6 @@
 from django.db import models
 from django.urls import reverse
+from django.core.validators import MaxValueValidator
 
 
 class Cohorte(models.Model):
@@ -8,7 +9,7 @@ class Cohorte(models.Model):
         ('No Activa', 'No Activa')
     )
 
-    numerodecohorte = models.IntegerField()
+    numerodecohorte = models.IntegerField(validators=[MaxValueValidator(999)], unique=True )
     estadodelacorhorte = models.CharField(max_length=15, choices=OPCIONES_ESTADO, default='Activa')
     numerodeestudiantes = models.PositiveIntegerField(editable=False, default=0)
 

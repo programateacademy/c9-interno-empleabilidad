@@ -15,7 +15,7 @@ class Estudiante (models.Model):
     )
     nombre = models.CharField(max_length=50)
     cohorte = models.ForeignKey(Cohorte, default=None, null=True, on_delete=models.SET_NULL)
-    dni = models.IntegerField(validators=[MaxValueValidator(999999999999)])
+    dni = models.IntegerField(validators=[MaxValueValidator(999999999999)], unique=True)
     contraseña = models.CharField(max_length=128)
     empresa = models.ForeignKey(Empresa, null=True, on_delete= models.SET_NULL)
     empleabilidad = models.CharField(max_length=15, choices=OPCIONES, default='Empleado')
