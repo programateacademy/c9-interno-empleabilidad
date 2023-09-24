@@ -5,8 +5,9 @@ from django.contrib import admin
 
 from .models.student import Estudiante
 from .models.cohorteDate import Cohorte
-from .models.company import Empresa
+from.models.company import Empresa
 
+# from .models.company import Empresa
 # admin.site.index_title = _('Bienvenido')
 # admin.site.site_header = _('Panel de administración de tu sitio')
 # admin.site.site_title = _('Panel de administración')
@@ -20,21 +21,21 @@ from .models.company import Empresa
 
 # admin_site = MyAdminSite(name='myadmin')
 
-class StudentAdmin(admin.ModelAdmin):
-    list_display = ( 'name', 'dni', 'employability', 'company')
-    search_fields = ('name', 'dni')
+class EstudianteAdmin(admin.ModelAdmin):
+    list_display = ( 'nombre', 'dni', 'empleabilidad', 'empresa')
+    search_fields = ('nombre', 'dni')
     ordering = ('-cohorte',)
     
-class cohorteDateAdmin(admin.ModelAdmin):
-    list_display = ('cohorteNumber', 'cohorteStatus', 'numberParticipants')
-    search_fields = ('cohorteNumber',)
-    ordering = ('-cohorteNumber',)
+class CohorteAdmin(admin.ModelAdmin):
+    list_display = ('numerodecohorte', 'estadodelacorhorte', 'numerodeparticipantes')
+    search_fields = ('numerodecohorte',)
+    ordering = ('-numerodecohorte',)
     
-class CompanyAdmin(admin.ModelAdmin):
-    ordering = ('companyName',)
+class EmpresaAdmin(admin.ModelAdmin):
+    ordering = ('nombre',)
     
     
-admin.site.register(Estudiante)
-admin.site.register(Cohorte)
-admin.site.register(Empresa)
+admin.site.register(Estudiante, EstudianteAdmin)
+admin.site.register(Cohorte , CohorteAdmin)
+admin.site.register(Empresa, EmpresaAdmin)
 
