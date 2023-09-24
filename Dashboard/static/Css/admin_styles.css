@@ -15,6 +15,7 @@
     margin-left: 1rem; 
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 
@@ -26,6 +27,12 @@
 #user-tools a[href="/"] {
     display: none;
 }
+
+.object-tools .viewsitelink {
+    visibility: hidden;
+}
+
+
 
 
 
