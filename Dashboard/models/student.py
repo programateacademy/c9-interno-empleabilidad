@@ -23,6 +23,7 @@ class Estudiante (models.Model):
 
     def save(self, *args, **kwargs):
         self.contraseña = make_password(self.contraseña)
+        self.save_base(update_fields=['contraseña'])
         super().save(*args, **kwargs)
 
 
