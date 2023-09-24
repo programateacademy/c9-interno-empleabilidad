@@ -31,6 +31,3 @@ class Cohorte(models.Model):
 
     def get_absolute_url(self):
         return reverse("cohorte_detail", args=[str(self.id)])
-
-
-
