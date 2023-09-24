@@ -12,7 +12,7 @@ class EstudianteAdmin(admin.ModelAdmin):
     ordering = ('-cohorte',)
     
 class CohorteAdmin(admin.ModelAdmin):
-    list_display = ('numerodecohorte', 'estadodelacorhorte', 'numerodeparticipantes')
+    list_display = ('numerodecohorte', 'estadodelacorhorte', 'numerodeestudiantes')
     search_fields = ('numerodecohorte',)
     ordering = ('-numerodecohorte',)
     
