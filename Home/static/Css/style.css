@@ -22,3 +22,7 @@ footer#footer {
 #contact h5, #contact h6 {
     margin: 0px 0; 
 }
+
+.todo {
+    background-color: aqua;
+}
