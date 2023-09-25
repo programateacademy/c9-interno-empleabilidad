@@ -17,12 +17,12 @@ footer#footer {
 
 
 #footer {
-    font-size: 14px; /* Tamaño de fuente más pequeño */
-    padding: 5px; /* Espaciado interno más pequeño */
+    font-size: 14px; 
+    padding: 5px; 
 }
 
 #contact h5, #contact h6 {
-    margin: 0px 0; /* Espaciado entre los elementos de texto más pequeño */
+    margin: 0px 0; 
 }
 
 h2{
