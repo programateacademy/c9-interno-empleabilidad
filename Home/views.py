@@ -7,5 +7,5 @@ def loginstudent(request):
 def home(request):
     return render (request, 'Home/home.html')
 
-def home(request):
+def cambio_contraseña(request):
     return render (request, 'Home/cambio_contraseña.html')
