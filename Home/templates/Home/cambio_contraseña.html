@@ -1,0 +1,67 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>demo</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body class="text-center">
+    <nav class="flex-sm-row bg-warning ">
+        <div class="d-flex justify-content-evenly flex-wrap">
+            <img class=" align-self-center imagen" src="{% static 'img/programate.png' %}" alt="Descripción de la imagen" />
+            <img class=" align-self-center imagen" src="{% static 'img/logo.png' %}" alt="Descripción de la imagen" />
+            <img class=" align-self-center imagen" src="{% static 'img/cambio_contraseña.png' %}" alt="Logo Programate Academy"/>
+            
+        </div>
+        
+        
+    </nav>
+    <div>
+        <img class=" align-self-center imagen" src="{% static 'img/cambiar_la_contraseña.png' %}" alt="Logo Programate Academy"/>
+    </div>
+    
+    <div class="container bg-light p-4 rounded">
+        <h2 class="mb-4">Formulario Cambio de Contraseña</h2>
+        <form>
+            <div class="form-group text-left">
+                <label for="contrasenaActual">Contraseña Actual:</label>
+                <input type="password" class="form-control" id="contrasenaActual" placeholder="Contraseña Actual">
+            </div>
+            <div class="form-group text-left">
+                <label for="nuevaContrasena">Nueva Contraseña:</label>
+                <input type="password" class="form-control" id="nuevaContrasena" placeholder="Nueva Contraseña">
+            </div>
+            <div class="form-group text-left">
+                <label for="confirmarContrasena">Confirmar Contraseña:</label>
+                <input type="password" class="form-control" id="confirmarContrasena" placeholder="Confirmar Contraseña">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-warning">Cambiar Contraseña</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="fondo">
+    </div>
+
+    <footer id="footer" class="bg-warning text-dark flex-wrap">
+        <div >
+            <div class="row">
+                <div id="contact" class="col-md-12">
+                    <h5>Si tienes alguna pregunta, contáctanos:</h5>
+                    <h6>Teléfono: +123456789</h6>
+                    <h6>Correo: info@example.com</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+        
+    <script src="{% static 'js/script.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
