@@ -12,10 +12,10 @@
 
 <body class="text-center">
     <nav class="flex-sm-row bg-warning ">
-        <div class="d-flex justify-content-evenly flex-wrap">
+        <div class="d-flex justify-content-around flex-wrap">
             <img class=" align-self-center imagen" src="{% static 'img/logo.png' %}" alt="Logo Programate Academy" />
             <img class=" align-self-center imagen" src="{% static 'img/logo-negro-alta.png' %}" alt="Descripción de la imagen" />
-            <img class=" align-self-center imagen-contraseña" src="{% static 'img/cambio_contraseña.png' %}" alt="Texto de cambiar contraseña"/>
+            
             
         </div>
         
@@ -65,10 +65,7 @@
 </html>
 
 <style>
-    img.imagen-contraseña{
-        background-color:#F2BC1B;
-        color:#F2BC1B;
-        }
+    
         body, html, nav{
             margin: 0;
             padding: 0;
@@ -112,5 +109,6 @@
 
         nav{
             background-image: url('static/img/cambio_contraseña.png');
+            background-color: #F2BC1B;
         }
 </style>
