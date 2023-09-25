@@ -13,3 +13,12 @@ footer#footer {
     line-height: 2px;
     
  }
+
+ #footer {
+    font-size: 14px; 
+    padding: 5px; 
+}
+
+#contact h5, #contact h6 {
+    margin: 0px 0; 
+}
