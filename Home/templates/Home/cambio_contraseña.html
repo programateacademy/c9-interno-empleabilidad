@@ -13,34 +13,32 @@
 <body class="text-center">
     <nav class="flex-sm-row bg-warning ">
         <div class="d-flex justify-content-evenly flex-wrap">
-            <img class=" align-self-center imagen" src="{% static 'img/logo.png' %}" alt="Descripción de la imagen" />
+            <img class=" align-self-center imagen" src="{% static 'img/logo.png' %}" alt="Logo Programate Academy" />
             <img class=" align-self-center imagen" src="{% static 'img/logo-negro-alta.png' %}" alt="Descripción de la imagen" />
-            <img class=" align-self-center imagen" src="{% static 'img/cambio_contraseña.png' %}" alt="Logo Programate Academy"/>
+            <img class=" align-self-center imagen-contraseña" src="{% static 'img/cambio_contraseña.png' %}" alt="Texto de cambiar contraseña"/>
             
         </div>
         
-        
     </nav>
-    <div class="todo">
-        <img class=" align-self-center imagen bg-warning" src="{% static 'img/cambiar_la_contraseña.png' %}" alt="Logo Programate Academy"/>
-    </div>
     
-    <div class=" bg-light p-4 rounded">
-        
+    <div class=" bg-light rounded">
+        <h2 class="mb-4"> Cambiar la contraseña</h2>
         <form>
-            <div class="form-group text-left">
-                <label for="contrasenaActual">Contraseña Actual:</label>
-                <input type="password" class="form-control" id="contrasenaActual">
+            <div class="form-row">
+                <div class="form-group col-md-4 ">
+                    <label for="contrasenaActual">Contraseña Actual:</label>
+                    <input type="password" class="form-control" id="contrasenaActual">
+                </div>
+                <div class="form-group col-md-4 ">
+                    <label for="nuevaContrasena">Nueva Contraseña:</label>
+                    <input type="password" class="form-control" id="nuevaContrasena">
+                </div>
             </div>
-            <div class="form-group text-left">
-                <label for="nuevaContrasena">Nueva Contraseña:</label>
-                <input type="password" class="form-control" id="nuevaContrasena">
-            </div>
-            <div class="form-group text-left">
+            <div class="form-group  col-md-4 ">
                 <label for="confirmarContrasena">Confirmar Contraseña:</label>
-                <input type="password" class="form-control" id="confirmarContrasena">
+                <input type="password" class="form-control" id="confirmarContrasena" >
             </div>
-            <div class="form-group">
+            <div class="form-group col-md-12 py-4">
                 <button type="submit" class="btn btn-warning">Cambiar Contraseña</button>
             </div>
         </form>
@@ -65,3 +63,54 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
+
+<style>
+    img.imagen-contraseña{
+        background-color:#F2BC1B;
+        color:#F2BC1B;
+        }
+        body, html, nav{
+            margin: 0;
+            padding: 0;
+        }
+        
+        
+        footer#footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            background-color: #ffc107;
+            line-height: 2px;
+            
+         }
+        
+        
+        #footer {
+            font-size: 14px; /* Tamaño de fuente más pequeño */
+            padding: 5px; /* Espaciado interno más pequeño */
+        }
+        
+        #contact h5, #contact h6 {
+            margin: 0px 0; /* Espaciado entre los elementos de texto más pequeño */
+        }
+        
+        h2{
+            background-color: #ffdc73;
+        }
+        
+        .form-row{
+            line-height: 1rem;
+        }
+        
+        
+        label{
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+        }
+
+        nav{
+            background-image: url('static/img/cambio_contraseña.png');
+        }
+</style>
