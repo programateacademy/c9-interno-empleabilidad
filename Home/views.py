@@ -8,4 +8,4 @@ def home(request):
     return render (request, 'Home/home.html')
 
 def home(request):
-    
+    return render (request, 'Home/cambio_contraseña.html')
