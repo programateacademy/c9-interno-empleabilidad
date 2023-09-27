@@ -5,6 +5,7 @@ from django.contrib import admin
 from .models.student import Estudiante
 from .models.cohorteDate import Cohorte
 from.models.company import Empresa
+from django.contrib.auth.hashers import make_password, check_password
 
 class EstudianteAdmin(admin.ModelAdmin):
     list_display = ( 'nombre', 'dni', 'empleabilidad', 'empresa')
