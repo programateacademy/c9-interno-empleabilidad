@@ -1,32 +1,45 @@
 from django.db import models
 from django.core.validators import MaxValueValidator
 from django.urls import reverse
-from django.contrib.auth.hashers import make_password
+from django.contrib.auth.hashers import check_password
 from .company import Empresa
 from .cohorteDate import Cohorte
-from django.db.models.signals import post_save
-from django.dispatch import receiver
+from django.contrib.auth.models import User
+from django.db import IntegrityError
 
-class Estudiante (models.Model):
+class Estudiante(models.Model):
     OPCIONES = (
         ('Empleado', 'Empleado',),
         ('En Proceso', ('En Proceso')),
         ('Desenpleado', ('Desempleado'))
     )
+    username = models.CharField(max_length=150)
+    user = models.OneToOneField(User, on_delete=models.CASCADE, editable=False, null=True, blank=True)
     nombre = models.CharField(max_length=50)
+    apellido = models.CharField(max_length=100)
     cohorte = models.ForeignKey(Cohorte, default=None, null=True, on_delete=models.SET_NULL)
     dni = models.IntegerField(validators=[MaxValueValidator(999999999999)], unique=True)
-    contraseña = models.CharField(max_length=128)
     empresa = models.ForeignKey(Empresa, null=True, on_delete= models.SET_NULL)
+    contraseña = models.CharField(max_length=128)
     empleabilidad = models.CharField(max_length=15, choices=OPCIONES, default='Empleado')
 
 
 
     def save(self, *args, **kwargs):
+        if self.pk is None:
+            try:
+                user = User.objects.create_user(
+                    username=self.username,
+                    password=self.contraseña,
+                    first_name=self.nombre,
+                    last_name=self.apellido,
+            )
+                self.user = user
+            except IntegrityError:
+                raise ValueError("Un usuario con ese nombre de usuario ya existe")
         super().save(*args, **kwargs)
         if self.cohorte:
             self.cohorte.actualizar_numerodeestudiantes()
-
 
     def __str__(self):
         return self.nombre
