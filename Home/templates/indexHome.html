@@ -1,64 +1,14 @@
-{% load static %}
-{% block content %}
-<link rel="stylesheet" href="{% static '../static/Css/login_styles_users.css' %}">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Proceso de empleabilidad</title>
-
-
-<div class="container-img">
-  <img title="programate" src="../../static/img/Logo.png"/>
-</div>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">Iniciar sesión Usuario</h3>
-              <div class="line"></div>
-          </div>
-            <form method="post" action="" class="form">
-              {% csrf_token %}
-              <p><label for="id_usuario"></label> <input type="text" name="usuario" maxlength="50" required id="id_usuario" placeholder="Correo/Cedula" class="form-control"></p>
-              <p><label for="id_contraseña"></label> <input type="password" name="contraseña" required id="id_contraseña" placeholder="Contraseña" class="form-control"></p>
-              <button type="submit" class="btn btn-primary">Ingresar</button>
-            </form>
-            <div id="mostrarInfo" >
-              <svg href="#" xmlns="http://www.w3.org/2000/svg" width="35" height="35"class="bi bi-question-circle have-question" viewBox="0 0 16 16">
-                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
-              </svg>
-            </div>
-          
-            <div id="infoBox">
-              <a>
-                <div>
-                  <p>
-                    Si tienes dudas, contáctanos al número +57 3011664111
-                    o al correo <i class="bi bi-envelope"></i> <a href="mailto:cgranados@educamas.com.co" style="color: blue;">cgranados@educamas.com.co</a>
-                </p>
-                </div>
-              </a>
-            </div>
-          
-            <script>
-              document.getElementById("mostrarInfo").addEventListener("click", function() {
-                var infoBox = document.getElementById("infoBox");
-                if (infoBox.style.display === "none" || infoBox.style.display === "") {
-                  infoBox.style.display = "block";
-                } else {
-                  infoBox.style.display = "none";
-                }
-              });
-            </script>
-          </div>
-      </div>
-    </div>
-  </div>
-
-
-<div class="container-img2">
-  <img title="Educamás" src="../static/img/logo-negro-alta.png"/>
-</div>
-
-
-{% endblock  %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iniciar Sesión</title>
+</head>
+<body>
+    <h2>Iniciar Sesión</h2>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Iniciar sesión</button>
+    </form>
+</body>
+</html>
