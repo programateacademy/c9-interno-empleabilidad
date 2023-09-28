@@ -18,7 +18,14 @@
             <img class=" align-self-center imagen" src="{% static 'img/logo-negro-alta.png' %}" alt="Descripción de la imagen" />
             
         </div>
-        
+
+        <div class="hidden">
+            <li class="nav-item">
+                <button>
+                    <a class="nav-link" href="/logout">Cerrar Sesión</a>
+                </button>
+            </li>
+        </div>
         
     </nav>
     
@@ -35,7 +42,7 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- Editar para ver lo que esta en la base de datos segun el estudiante -->
+
                 <tr class="table-light ">
                     <td class="text-left">{{ datos_usuario.nombre }}</td>
                     <div>
@@ -46,7 +53,7 @@
                     </div>
                     <td class="text-left">{{ datos_usuario.empresa }}</td>
                 </tr>
-                <!-- Agrega más filas aquí según sea necesario -->
+
             </tbody>
         </table>
     </div>
