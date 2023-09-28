@@ -4,25 +4,8 @@ body, html, nav{
 }
 
 
-
-/* body, html, nav{
-    overflow: hidden;
-
-} */
-
-
-  /* Para pantallas más grandes, usa el tamaño original de 300px */
-nav .imagen {
-    max-width: 220px;
-    width: 100%; /* Asegura que la imagen se ajuste al 100% del ancho del contenedor */
-    height: auto; /* Mantén la relación de aspecto original */
-}
-
-
-
-
 table {
-    margin-bottom: 0px; /* Puedes ajustar el valor (en píxeles u otra unidad) según tu preferencia */
+    margin-bottom: 0px; 
 }
 
 .fondo {
@@ -53,15 +36,15 @@ table {
 @media (max-width: 576px) {
     .no-border-row th,
     .no-border-row td {
-        border: none; /* Elimina los bordes en pantallas menores a 576px */
+        border: none; 
     }
     .col-sm-12.full-height {
-        height: calc(100vh - 150px); /* Ajusta la altura según sea necesario */
+        height: calc(100vh - 150px); 
     }
     .col-sm-12.full-height table {
-        max-width: 100%; /* Establece un ancho máximo para la tabla */
-        width: 100%; /* Ocupa todo el ancho disponible */
-        height: 100%; /* Ocupa todo el alto disponible en el contenedor */
+        max-width: 100%;
+        width: 100%;
+        height: 100%; 
     }
 }
 
@@ -92,7 +75,7 @@ table {
     
 }
 
-/* Estilos para el footer pegado abajo */
+
 footer#footer {
     position: fixed;
     bottom: 0;
@@ -102,16 +85,65 @@ footer#footer {
     background-color: #ffc107;
     line-height: 2px;
     
- } /* Cambia el color de fondo si es necesario */
-
+} 
 
 
 
 #footer {
-    font-size: 14px; /* Tamaño de fuente más pequeño */
-    padding: 5px; /* Espaciado interno más pequeño */
+    font-size: 14px; 
+    padding: 5px; 
 }
 
 #contact h5, #contact h6 {
-    margin: 0px 0; /* Espaciado entre los elementos de texto más pequeño */
+    margin: 0px 0; 
+}
+
+
+button {
+    --color: #ffc107;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+}
+
+button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+button:hover {
+    color: #fff;
+}
+
+button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+
+button:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+button:active:before {
+    background: #ffc107;
+    transition: background 0s;
 }
