@@ -1,4 +1,4 @@
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 from django.shortcuts import render, redirect
 from .forms import EstudianteLoginForm
 from django.contrib import messages
@@ -15,8 +15,8 @@ def loginstudent(request):
             if user is not None:
                 login(request, user)
                 return redirect('home')
-            else:
-                messages.error(request, 'Los detalles de inicio de sesión no son válidos')
+                
+        return redirect('loginstudent')
     else:
         form = EstudianteLoginForm()
     return render(request, 'indexHome.html', {'form': form})
@@ -28,6 +28,12 @@ def home(request):
     datos_usuario = Estudiante.objects.filter(username=request.user).first()
     if datos_usuario:
         return render(request, 'Home/home.html', {'datos_usuario': datos_usuario})
+
+
+@login_required
+def signout(request):
+    logout(request)
+    return redirect('index')
 
 
 def index(request):
