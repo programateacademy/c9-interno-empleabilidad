@@ -25,4 +25,5 @@ urlpatterns = [
 urlpatterns += [
     path('', include('Dashboard.urls')),
     path('', include('Home.urls')),
+
 ]

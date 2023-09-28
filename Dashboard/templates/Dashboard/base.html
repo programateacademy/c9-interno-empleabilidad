@@ -12,9 +12,9 @@
 </head>
 
 <body>
-    {% if user.is_authenticated %}
+    {% comment %} {% if user.is_authenticated %}
+    {% endif %} {% endcomment %}
     {% include 'Dashboard/nav.html' %}
-    {% endif %}
     
 
     {% block content %}

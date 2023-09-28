@@ -1,435 +1,229 @@
-body {
-    background-image: url(../img/img.png);
-    background-repeat: no-repeat;
-    background-position:center center;
-    background-attachment: fixed;
-    background-size: cover;
-    font-family: Arial, sans-serif;
+/* Estilos generales */
+*{
+    padding: 0;
     margin: 0;
-    padding: 0;
-}
-
-
-div.card{
-    max-width: 370px;
-    min-height: 370px;
-    min-width: 330px;
-    margin-right: 120px;
-    border-radius: 20px;
-    line-height: 20px;
-    
-}
-
-.card-body{
-    line-height: 0.5px;
-    padding: 0;
-}
-p,input{
-    line-height: 19px;
-    margin: 0 0 10px;
-    padding: 2px;
-}
-
-
-
-
-.button {
-    display: block;
-    width: 100%;
-    height: 40px;
-    background-color: #313131;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    font-size: large;
-    padding: 0;
-}
-
-.button:hover  {
-    background-color: #000000 ;
-}
-.button:active  {
-    background-color: #40bd53;
-}
-
-div.ola{
-    padding: 0;
-}
-
-
-img.imagen-superior{
-    width: 29%;
-    height: 50%;
-    padding: 0;
-}
-
-img.imagen-inferior{
-    width: 40%;
-    height: 50%;
-    padding: 0;
-    position: fixed;
-    bottom: 0;
-    flex-wrap: nowrap;
-    right: 0;
-}
-
-div.programate{
-    position: relative;
-
-}
-
-img.academy{
-    position: absolute;
-    width: 24%; 
-    height: auto;
-    justify-content: center;
-    position: fixed;
-    margin-left: 1rem;
-    padding-bottom: 2rem;
-}
-
-
-
-
-div.todo{
-    padding: 0;
-}
-
-.formu{
-    margin-top: 20rem;
-    z-index: 2;
-    margin-right: 9rem;
-}
-
-
-
-
-div.ola2{
-    position: relative;
-}
-
-img.edu-blanco{
-    position: absolute;
-    height: auto;
-    position: fixed;
-    z-index: 1;
-    bottom: 0;
-    flex-wrap:nowrap;
-    width: 38%;
-    right: 0;
-    margin-right: 0.9rem;
-}
-
-
-
-
-
-
-@media (max-width: 1600px){
-
-    .formu{
-        margin-top: 16rem;
-        margin-right: 0.8rem;
-    }
-}
-
-
-@media (max-width: 1436px){
-
-    img.imagen-superior{
-        width: 35%;
-        padding: 0;
-    }
-
-    
-    img.academy{
-        min-width: 390px;
-        min-height: 63px;
-        margin-left: 0.5rem;
-    }
-
-    .formu{
-        margin-top: 16rem;
-        margin-right: 0.8rem;
-    }
-
-}
-
-
-@media (max-width: 1300px){
-    
-    img.academy{
-        min-width: 360px;
-        min-height: 60px;
-        margin-left: 1rem;
-    }
-
-        
-    .formu{
-        margin-top: 12rem;
-        margin-right: 0.8rem;
-    }
-    
-}
-
-
-
-@media screen and (max-width: 1024px) and (max-height: 600px) {
-    
-    .formu{
-        margin-top: 6rem;
-        margin-right: 0rem;
-    }
-  }
-
-  @media screen and (max-width: 820px) and (max-height: 1180px) {
-
-    img.edu-blanco{
-       margin-bottom: 1rem;
-       margin-right: 1rem;
-    }
-  }
-
-
-  
-  @media screen and (max-width: 912px) and (max-height: 1368px) {
-
-    img.edu-blanco{
-       margin-bottom: 1rem;
-       margin-right: 1rem;
-    }
-  }
-
-
-
-
-
-@media (max-width: 979px){
-
-    img.imagen-inferior{
-        min-width: 440px;
-        min-height: 100px;
-        max-width: 500px;
-        max-height: 400px;
-    }
-
-    img.imagen-superior{
-        min-width: 440px;
-        min-height: 100px;
-        max-width: 500px;
-        max-height: 300px;
-    }
-}
-
-@media (max-width: 874px){
-    div.card{
-        margin-right: 2rem;
-        margin-top: 1rem;
-    }
-    img.imagen-superior{
-        min-width: 370px;
-        min-height: 100px;
-    }
-
-    img.imagen-inferior{
-        min-width: 430px;
-        min-height: 100px;
-        max-width: 500px;
-        max-height: 300px;
-    }
-
-    img.edu-blanco{
-        min-width: 400px;
-        min-height: 100px;
-        max-width: 300px;
-        max-height: 100px;
-    }
-
-    .formu{
-        margin-top: 14rem;
-        margin-right: 0rem;
-    }
-    
-}
-
-/* Agrega un estilo general para la sección "programate" */
-
-
-
-
-
-div.programate {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* Alinea los elementos en la parte superior */
   }
   
-  div.card-body{
-    min-width: 400px;
-    min-height: 400px;
-    max-width: 400px;
-    max-height: 400px;
-}
-  /* Centra el contenido del formulario verticalmente solo en pantallas pequeñas */
-  @media (max-width: 771px) {
-    .programate {
+  
+  body {
+      background-image: url(../img/img.png);
+      background-repeat: no-repeat;
+      background-position:center center;
+      background-attachment: fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      max-width: 30%;
+      margin: 0 auto;
+      border-radius: 30px;    
+      height: 25rem;
+      margin-right: 70px;
+      
+    }
+  
+  
+    
+    
+    /* Estilos del panel */
+    .panel {
+      border: 1px solid #FFC107;
+      border-radius: 5%;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .panel {
+      background-color: #FFC107;
+      color: rgb(0, 0, 0);
+      padding: 15px;
+      font-size: larger;
+      text-align: center;
+      height: 21rem;
+    }
+  
+    .panel-title{
+      display:inline-block;
+      font-size: x-large;
+      position: relative;
+      top: -1rem;
+  
+    }
+  
+  .line * {
+    box-sizing: border-box;
+  }
+  .line {
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px 0 0 0;
+    width: 355px;
+    height: 0px;
+    position: relative;
+    transform-origin: 0 0;
+    transform: rotate(0deg) scale(1, 1);
+  }
+  
+  .panel-heading{
+    position: relative;
+    margin-top: 2rem;
+  }
+  
+  
+    .container-img{
+      text-align: left;
+      padding: 20px;
+    }
+  
+    .container-img2 {
+      text-align:left;
+      padding: 20px;
+    }
+  
+    /* Estilos del formulario */
+    .form-control {
+      display: flex;
+      width: 100%;
+      height: 50px;
+      border: none;
+      border-bottom: 1px solid #E0E0E0;
+      outline: none;
+      border-radius: 10px;
+      padding-left: 1rem;
+      font: 1em sans-serif;
+      margin-bottom: 30px;
+    }
+    
+    .form-control:focus {
+      border-bottom-color: #ffffff;
+    }
+  
+    .form {
+      height: 10rem;
+      margin-bottom: 2rem;
+      position: relative;
+      top: 3rem;
+    }
+
+
+    
+  
+    .row {
+      position: relative;
+      margin-top: 3rem;
+    }
+  
+    
+    .btn {
+      display: flex;
+      width: 50%;
+      height: 40px;
+      background-color: #000000;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      font-size: large;
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    
+    .btn:hover {
+      transform: translateY(3px);
+      box-shadow: none;
+    }
+    
+    .btn:active {
+      opacity: 0.7;
+    }
+  
+  
+  /* `sm` applies to x-small devices (portrait phones, less than 576px)*/
+  @media (max-width: 575.98px) { 
+  
+    .container{
+     max-width: 60%;
+    }
+  }
+  
+  
+  
+  /* `md` applies to small devices (landscape phones, less than 768px)*/
+  @media (max-width: 767.98px) { 
+    .row {
+      display: flex;
       flex-direction: column;
-      align-items: center; /* Centra verticalmente el contenido del formulario */
+      align-items: center;
     }
-  
-    .formu {
-      margin-left: 2rem;
-      min-width: 300px;
-      max-height: 300px;
-    
    
+    .col-md-6 {
+      width: 100%;
+  
     }
-
-    div.card,.formu {
-        width: 100%;
-        max-width: 400px; /* Ajusta el ancho máximo para pantallas más grandes si es necesario */
-        margin: 0 auto; /* Centra horizontalmente el formulario */
-        position: relative;  
-        margin-left: 6rem;
-        margin-top: -3rem;
-      }
-    
+   
+    .col-md-offset-3 {
+      margin-left: 0;
+    }
+  
+    .container {
+     max-width: 60%;
+     margin: 0 auto;
+    }
+  
+    .line {
+     width: 100%;
+    }
+   
+   }
+  
+  @media(min-width: 768px){
+    .line {
+      width: 100%;
+    }
+  
+    .container{
+      max-width: 35%;
+    }
+  
+  
   }
   
+  /* `lg` applies to medium devices (tablets, less than 992px) */
+  @media (max-width: 991.98px) { 
+  
+   }
+  
+  /* `xl` applies to large devices (desktops, less than 1200px)*/
+  @media (max-width: 1199.98px) { 
+  
+   }
+  
+  /*`xxl` applies to x-large devices (large desktops, less than 1400px)*/
+  @media (max-width: 1399.98px) { 
+   }
 
-  @media (max-width: 689px){
-
-    div.card,.formu { 
-        margin-left: 4.5rem;
-        margin-top: -5rem;
-      }
-    
-  }
-  @media (max-width: 632px){
-
-    div.card,.formu { 
-        margin-left: 3rem;
-       
-      }
-    
-  }
-
-  @media (max-width: 602px){
-
-    div.card,.formu { 
-        margin-left: 3rem;
-        
-      }
-    
-
-
+   .have-question {
+    fill: black;
+    position: absolute;
+    bottom: 40px; /* Ajusta esta propiedad para cambiar la distancia desde la parte inferior */
+    right: 10%; /* Ajusta esta propiedad para cambiar la distancia desde la derecha */
+    z-index: 9999; /* Para que esté por encima de otros elementos */
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
   }
   
-  @media (max-width: 544px){
-
-    div.card,.formu { 
-        margin-left: 3rem;
-        
-      }
-    
-  }
-
-  @media (max-width: 564px){
-
-    div.card,.formu { 
-        margin-left: 2rem;
-       
-      }
-    
-  }
-
-
-
-
+  #infoBox {
+    display: none;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    padding: 10px;
+    position: absolute;
+    bottom: 50px; /* Ajusta este valor para moverlo más abajo */
+    right: 15%; 
+    border-radius: 20px;
   
-  @media (max-width: 520px){
-
-    div.card,.formu { 
-        margin-left: 2rem;
-        
-      }
-    
   }
-
-
-  @media (max-width: 498px){
-
-    div.card,.formu { 
-        margin-left: 1.5rem;
-       
-      }
-      img.imagen-inferior{
-        min-width: 410px;
-        min-height: 100px;
-        max-width: 500px;
-        max-height: 200px;
-    }
-
-    img.edu-blanco{
-        min-width: 330px;
-        min-height: 100px;
-        max-width: 200px;
-        max-height: 100px;
-    }
-    
-  }
-
-  @media (max-width: 454px){
-
-    div.card,.formu { 
-        margin-left: 1rem;
-       
-      }
-    
-  }
-
-  @media (max-width: 432px){
-
-    div.card,.formu { 
-        margin-left: 0.5rem;
-       
-      }
-    
-  }
-
-
-  @media (max-width: 416px){
-
-    div.card,.formu { 
-        margin-left: 0.2rem;
-       
-      }
-    
-  }
-
-  @media (max-width: 410px){
-
-    div.card,.formu { 
-        margin-left: 1px;
-       
-      }
-    
-  }
-
-  @media (max-width: 370px){
-
-    div.card,.formu { 
-        margin-left: 3px;
-       
-      }
-    
-  }
-
-  @media (max-width: 350px){
-
-    div.card,.formu { 
-        margin-left: 8px;
-       
-      }
-    
-  }
+  
+  
