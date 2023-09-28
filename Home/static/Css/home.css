@@ -3,6 +3,17 @@ body, html, nav{
     padding: 0;
 }
 
+nav .imagen {
+    max-width: 220px;
+    width: 100%; 
+    height: auto; 
+}
+
+.hidden{
+    list-style-type: none;
+    display: flex;
+    margin-top: 0.5rem;
+}
 
 table {
     margin-bottom: 0px; 
@@ -147,3 +158,4 @@ button:active:before {
     background: #ffc107;
     transition: background 0s;
 }
+
