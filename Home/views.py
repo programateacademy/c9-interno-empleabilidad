@@ -54,3 +54,6 @@ def loginstudent(request):
 
 def home(request):
     return render (request, 'Home/home.html')
+
+def index(request):
+    return render (request, 'index.html')
