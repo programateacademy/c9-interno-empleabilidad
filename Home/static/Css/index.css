@@ -1,4 +1,3 @@
-/* Estilos generales */
 * {
     padding: 0;
     margin: 0;
@@ -9,21 +8,18 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Estilos para el contenedor principal */
 .container {
-    display: flex; /* Usamos flexbox para centrar los botones */
-    justify-content: center; /* Centra horizontalmente los elementos hijos */
-    align-items: center; /* Centra verticalmente los elementos hijos */
-    height: 100vh; /* Ocupa toda la altura de la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .img-centrada {
-    max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
-    max-height: 100%; /* Asegura que la imagen no sea más alta que su contenedor */
+    max-width: 100%;
+    max-height: 100%;
 }
 
-  
-  /* === removing default button style ===*/
 .button {
     margin: 0;
     height: auto;
@@ -32,7 +28,6 @@ body {
     border: none;
   }
   
-  /* button styling */
   .button {
     --border-right: 6px;
     --text-stroke-color: rgba(255,255,255,0.6);
@@ -48,7 +43,7 @@ body {
     -webkit-text-stroke: 1px var(--text-stroke-color);
     cursor: pointer;
   }
-  /* this is the text, when you hover on button */
+
   .hover-text {
     position: absolute;
     box-sizing: border-box;
@@ -61,29 +56,24 @@ body {
     transition: 0.5s;
     -webkit-text-stroke: 1px var(--animation-color);
   }
-  /* hover */
+
   .button:hover .hover-text {
     width: 100%;
     filter: drop-shadow(0 0 23px var(--animation-color))
   }
 
-  /* Estilos para el enlace centrado en la parte inferior */
 .enlace-centrado {
-    position: fixed; /* Se mantiene en su lugar incluso al desplazarse */
-    bottom: 200px; /* Se coloca en la parte inferior */
-    left: 50%; /* Se coloca en el centro horizontal */
-    transform: translateX(-50%); /* Centra horizontalmente */
-    background-color: #1a8516; /* Cambia el color de fondo del contenedor (puedes ajustarlo según tus preferencias) */
-    padding: 10px; /* Agrega un poco de espacio alrededor del enlace */
-    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra debajo del contenedor */
-    z-index: 999; /* Controla la capa z para asegurar que esté en la parte superior */
-    text-align: center; /* Centra el contenido horizontalmente */
+    margin-top: 20px;
+    height: 50px;
+    width: 318px;
+    background-color: #1a8516;
+    padding: 10px;
+    text-align: center;
 }
 
-/* Estilos para el enlace */
 .enlace-centrado a {
-    text-decoration: none; /* Elimina el subrayado predeterminado del enlace */
-    color: #000; /* Cambia el color del texto del enlace (puedes ajustarlo según tus preferencias) */
-    font-weight: bold; /* Hace que el texto sea más audaz (opcional) */
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
     cursor: pointer;
 }
