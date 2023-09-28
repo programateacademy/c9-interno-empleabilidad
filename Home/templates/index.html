@@ -1,0 +1,40 @@
+
+{% load static %}
+{% block content %}
+<html>
+<head>
+<link rel="stylesheet" href="{% static '../static/Css/index.css' %}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proceso de empleabilidad</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-img">
+            <img title="programate" src="../static/img/Logo.png"/>
+        </div>
+        <div>
+            <a href="/admin">
+                <button data-text="Awesome" class="button">
+                    <span class="actual-text">&nbsp;Administrador&nbsp;</span>
+                    <span class="hover-text" aria-hidden="true">&nbsp;Administrador&nbsp;</span>
+                </button>
+            </a>
+        </div>
+        <div>
+            <a href="/loginstudent">
+                <button data-text="Awesome" class="button">
+                    <span class="actual-text">&nbsp;Estudiante&nbsp;</span>
+                    <span class="hover-text" aria-hidden="true">&nbsp;Estudiante&nbsp;</span>
+                </button>
+            </a>
+        </div>
+        <div class="enlace-centrado">
+            <a href="https://educamas.com.co/" target="_blank">Visitar Educamas</a>
+        </div>
+    </div>
+</body>
+
+
+
+{% endblock  %} 
