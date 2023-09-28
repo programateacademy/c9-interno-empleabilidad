@@ -1,0 +1,89 @@
+/* Estilos generales */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #ffc107;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    display: flex; /* Usamos flexbox para centrar los botones */
+    justify-content: center; /* Centra horizontalmente los elementos hijos */
+    align-items: center; /* Centra verticalmente los elementos hijos */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+.img-centrada {
+    max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
+    max-height: 100%; /* Asegura que la imagen no sea más alta que su contenedor */
+}
+
+  
+  /* === removing default button style ===*/
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+  }
+  
+  /* button styling */
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: #1a8516;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+    cursor: pointer;
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+
+  /* Estilos para el enlace centrado en la parte inferior */
+.enlace-centrado {
+    position: fixed; /* Se mantiene en su lugar incluso al desplazarse */
+    bottom: 200px; /* Se coloca en la parte inferior */
+    left: 50%; /* Se coloca en el centro horizontal */
+    transform: translateX(-50%); /* Centra horizontalmente */
+    background-color: #1a8516; /* Cambia el color de fondo del contenedor (puedes ajustarlo según tus preferencias) */
+    padding: 10px; /* Agrega un poco de espacio alrededor del enlace */
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra debajo del contenedor */
+    z-index: 999; /* Controla la capa z para asegurar que esté en la parte superior */
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+/* Estilos para el enlace */
+.enlace-centrado a {
+    text-decoration: none; /* Elimina el subrayado predeterminado del enlace */
+    color: #000; /* Cambia el color del texto del enlace (puedes ajustarlo según tus preferencias) */
+    font-weight: bold; /* Hace que el texto sea más audaz (opcional) */
+    cursor: pointer;
+}

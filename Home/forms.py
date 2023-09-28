@@ -4,7 +4,7 @@ from django.contrib.auth import authenticate
 from Dashboard.models.student import Estudiante
 
 class EstudianteLoginForm(forms.Form):
-    username_or_dni = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'Numero de identida o Usuario'}))
+    username_or_dni = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'Numero de identidad o Usuario'}))
     password = forms.CharField(widget=forms.PasswordInput(attrs={'placeholder': 'Contraseña'}))
 
     def clean(self):

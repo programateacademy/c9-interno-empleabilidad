@@ -13,13 +13,13 @@ from django.contrib.auth import login
     #login para que admin ingrese
 def loginadmin(request):
     if request.method == 'GET':
-        return render(request, 'index.html', {"form": AuthenticationForm})
+        return render(request, 'indexAdmin.html', {"form": AuthenticationForm})
     else:
         email = request.POST.get('email')
         password = request.POST.get('password')
         user = authenticate(request, email=email, password=password)
         if user is None:
-            return render(request, 'index.html', {"form": AuthenticationForm, "error": "Username or password is incorrect."})
+            return render(request, 'indexAdmin.html', {"form": AuthenticationForm, "error": "Username or password is incorrect."})
 
         login(request, user)
         return redirect('cohortes')
