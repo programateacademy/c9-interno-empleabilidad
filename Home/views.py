@@ -28,3 +28,7 @@ def home(request):
     datos_usuario = Estudiante.objects.filter(username=request.user).first()
     if datos_usuario:
         return render(request, 'Home/home.html', {'datos_usuario': datos_usuario})
+
+
+def index(request):
+    return render (request, 'index.html')
