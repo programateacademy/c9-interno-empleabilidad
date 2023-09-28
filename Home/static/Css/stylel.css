@@ -1,0 +1,117 @@
+body,
+html {
+  background-image: url("../img/fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.programate-image .educamas-container {
+  position: relative;
+}
+
+.programate-image {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+}
+
+.top-wave {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.educamas-image {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2;
+}
+
+.bottom-wave {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.login-container {
+  height: 400px;
+  width: 350px;
+  border-radius: 20px;
+  background-color: #F2BC1B;
+  margin-right: 100px;
+  z-index: 2;
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    width: 90%;
+    height: 400px;
+  }
+
+  .programate-image {
+    height: 74px;
+    width: 318px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .educamas-image {
+    height: 71px;
+    width: 290px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    justify-content: center;
+  }
+
+  .login-container {
+    margin-right: 0px;
+  }
+}
+
+label[for="id_username_or_dni"] {
+  display: none;
+}
+label[for="id_password"] {
+  display: none;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.login-container button[type="submit"] {
+  background-color: #3D8500;
+  color: #000;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-container button[type="submit"]:hover {
+  background-color: #306E00;
+}
