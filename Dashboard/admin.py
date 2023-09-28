@@ -8,7 +8,7 @@ from.models.company import Empresa
 from django.contrib.auth.hashers import make_password, check_password
 
 class EstudianteAdmin(admin.ModelAdmin):
-    list_display = ( 'nombre', 'dni', 'empleabilidad', 'empresa')
+    list_display = ( 'nombre', 'apellido', 'dni', 'empleabilidad', 'empresa')
     search_fields = ('nombre', 'dni')
     ordering = ('-cohorte',)
     
