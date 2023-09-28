@@ -10,8 +10,8 @@ from django.db import IntegrityError
 class Estudiante(models.Model):
     OPCIONES = (
         ('Empleado', 'Empleado',),
-        ('En Proceso', ('En Proceso')),
-        ('Desenpleado', ('Desempleado'))
+        ('En proceso de empleabilidad', ('En proceso de empleabilidad')),
+        ('Desempleado', ('Desempleado'))
     )
     username = models.CharField(max_length=150)
     user = models.OneToOneField(User, on_delete=models.CASCADE, editable=False, null=True, blank=True)
@@ -21,7 +21,7 @@ class Estudiante(models.Model):
     dni = models.IntegerField(validators=[MaxValueValidator(999999999999)], unique=True)
     empresa = models.ForeignKey(Empresa, null=True, on_delete= models.SET_NULL)
     contraseña = models.CharField(max_length=128)
-    empleabilidad = models.CharField(max_length=15, choices=OPCIONES, default='Empleado')
+    empleabilidad = models.CharField(max_length=30, choices=OPCIONES, default='Empleado')
 
 
 
@@ -48,10 +48,10 @@ class Estudiante(models.Model):
 def obtener_palabra(self):
             if self.seleccion == 'Empleado':
                 return "Empleado"
-            elif self.seleccion == 'En Proceso':
-                return "En Proceso"
-            elif self.seleccion == 'Desenpleado':
-                return "Desenpleado"
+            elif self.seleccion == 'En proceso de empleabilidad':
+                return "En proceso de empleabilidad"
+            elif self.seleccion == 'Desempleado':
+                return "Desempleado"
             else:
                 return "Ninguna opción seleccionada"
 
