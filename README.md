@@ -2,11 +2,14 @@
 
 <p align="center">
 <a href="https://right-quotation-339.notion.site/Educam-s-a5ce6e853a964fc289c8c35e0ac6a63d">Documentación</a>
+
+<p align="center">
+<a href="https://right-quotation-339.notion.site/Educam-s-a5ce6e853a964fc289c8c35e0ac6a63d">Documentación para el Usuario</a>
 <br/>
 
 ## Descripción
 ### Administrador:
-Es una aplicacion facil y sencilla de manejar a nivel de administrador para que sea facilmente modificar los datos de los egresados según su estado de empleabilida actual para que sea mucho mas facil.
+Es una aplicacion facil y sencilla de manejar a nivel de administrador para que puedan modificar los datos de los egresados según su estado de empleabilida actual.
 
 ### Egresado:
 Una aplicacion web en Django que permite a los egresados de la fundacion educamás consultar su estado de empleabilidad de forma rápida y sencilla, sin necesidad de contactar a las personas encargadas de la fundacion. el perfil de cada egresado.
@@ -16,7 +19,8 @@ El proyecto fue creado con [Django](https://www.djangoproject.com/) version 4.2.
 
 ## Version Oficial V1.0
 
-![image](https://github.com/programateacademy/c9-interno-empleabilidad/assets/90277397/f3acc5e8-0fd4-4e97-bab1-bfc7f98fbb70)
+![CopyQ MQfjdC](https://github.com/programateacademy/c9-interno-empleabilidad/assets/90277397/7d72e038-f047-488a-985a-7a3de5fed5c5)
+
 
 
 ## Dashboard Administrador
@@ -45,7 +49,7 @@ El proyecto fue creado con [Django](https://www.djangoproject.com/) version 4.2.
 
 - Se implemento `Tablas` para que los Administradores puedan agregar a los egresados.
 
-- Se implemento `Vista de egresados` Desde esa vista los egresados pueden ver sus datos para saber su estado de impleabilidad.
+- Se implemento `Vista de egresados` Desde esa vista los egresados pueden ver sus datos para saber su estado de empleabilidad.
 
 ## Tecnologias Usadas
 - Django
@@ -134,6 +138,9 @@ Si tienes alguna pregunta o sugerencia o quieres la documentacion para desarroll
 - [tiquedaniel2002@gmail.com](tiquedaniel2002@gmail.com).
 - [elhuxley277@gmail.com](elhuxley277@gmail.com)
 - [santiagobenitez467@gmail.com](santiagobenitez467@gmail.com)
+- [kevinsernap@gmail.com](kevinsernap@gmail.com)
+- [jasbbleidy.ca@gmail.com](jasbbleidy.ca@gmail.com)
+- [dairon.rodriguezvega@gmail.com](dairon.rodriguezvega@gmail.com)
 
 
 ## Autors
