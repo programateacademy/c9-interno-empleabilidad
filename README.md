@@ -4,7 +4,10 @@
 <a href="https://right-quotation-339.notion.site/Educam-s-a5ce6e853a964fc289c8c35e0ac6a63d">Documentación</a>
 
 <p align="center">
-<a href="https://right-quotation-339.notion.site/Educam-s-a5ce6e853a964fc289c8c35e0ac6a63d">Documentación para el Usuario</a>
+<a href="https://right-quotation-339.notion.site/Educam-s-a5ce6e853a964fc289c8c35e0ac6a63d">Documentación para el Administrador</a>
+<br/>
+<p align="center">
+<a href="https://drive.google.com/file/d/1v-_DhD2Zv9vz3Ft6GQdqdVanfbj-LU_W/view?usp=sharing">Documentación para el Egresado</a>
 <br/>
 
 ## Descripción
@@ -141,6 +144,7 @@ Si tienes alguna pregunta o sugerencia o quieres la documentacion para desarroll
 - [kevinsernap@gmail.com](kevinsernap@gmail.com)
 - [jasbbleidy.ca@gmail.com](jasbbleidy.ca@gmail.com)
 - [dairon.rodriguezvega@gmail.com](dairon.rodriguezvega@gmail.com)
+- [vimatoca050106@gmail.com](vimatoca050106@gmail.com)
 
 
 ## Autors
