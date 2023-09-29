@@ -35,6 +35,7 @@
             <thead>
                 <tr class="table-warning  no-border-row">
                     <th scope="col" class="text-left">Nombre</th>
+                    <th scope="col" class="text-left">Apellido</th>
                     <th scope="col" class="text-left " style="white-space: nowrap;">Documento de indentidad</th>
                     
                     <th scope="col" class="text-left align-middle" style="white-space: nowrap;">Proceso de Empleabilidad</th>
@@ -45,6 +46,9 @@
 
                 <tr class="table-light ">
                     <td class="text-left">{{ datos_usuario.nombre }}</td>
+                    <div>
+                        <td class="text-left">{{ datos_usuario.apellido }}</td>
+                    </div>
                     <div>
                     <td class="text-left">{{ datos_usuario.dni }}</td>
                     </div>
